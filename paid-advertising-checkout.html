@@ -310,10 +310,10 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
 
-if (localStorage.getItem("who") != "") {
-            document.getElementById("sign-in-account").innerHTML = "Account";
-            document.getElementById('change-href').href = "my-account.html";
-};
+      if (localStorage.getItem("who") === "alan" || localStorage.getItem("who") === "james" || localStorage.getItem("who") === "nano" || localStorage.getItem("who") === "sat") {
+          document.getElementById("sign-in-account").innerHTML = "Account";
+          document.getElementById('change-href').href = "my-account.html";
+      };
 
 sessionStorage.setItem("mode", "crypto");
 
