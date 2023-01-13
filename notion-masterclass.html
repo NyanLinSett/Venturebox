@@ -173,10 +173,10 @@
     <script>
       AOS.init();
 
-      if (localStorage.getItem("who") != "") {
+      if (localStorage.getItem("who") === "alan" || localStorage.getItem("who") === "james" || localStorage.getItem("who") === "nano" || localStorage.getItem("who") === "sat") {
           document.getElementById("sign-in-account").innerHTML = "Account";
           document.getElementById('change-href').href = "my-account.html";
-        };
+      };
     </script>
 </body>
 </html>
