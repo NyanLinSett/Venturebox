@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <title>Venturebox Hub: Careers</title>
+</head>
+<body style="background-color: var(--bg_bisque);">
+
+    <!--Navbar Start-->
+    <nav class="navbar navbar-light navbar-expand-lg bg-light justify-content-center" >
+        <div class="container"> 
+            <a href="index.html" class="navbar-brand d-flex w-50 mr-auto">
+                <img src="logo.svg" alt="" class="nav-logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="navbar-collapse collapse w-100" id="navbarSupportedContent">
+                <ul class="navbar-nav w-100 justify-content-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Hub
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="accelerator.html">Accelerator</a></li>
+                          <hr class="dropdown-divider">
+                          <li><a class="dropdown-item" href="services.html">Services</a></li>
+                          <li><a class="dropdown-item" href="blog.html">Blog</a></li>
+                          <li><a class="dropdown-item" href="subscriptions.html">Subscriptions</a></li>
+                          <li><a href="careers.html" class="dropdown-item active">Careers</a></li>
+                        </ul>
+                      </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav ml-auto w-100 justify-content-end">
+                    <a href="sign-in.html" id="change-href">
+                        <button class="btn btn-outline-primary sign-in-button rubik" id="sign-in-account">
+                            Sign In
+                        </button>
+                    </a>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--Navbar End-->
+
+
+    <!-- start of hero section of careers -->
+
+        <div class="careers-hero-container">
+            <div class="careers-hero-img-div" data-aos="fade-right">
+                <img src="careers-hero.png" alt="" class="img-fluid">
+            </div>
+            <div class="careers-hero-text" data-aos="fade-left">
+                <h3 class="display-5 poppins" style="font-weight: 500; color: white;">
+                    Build Businesses. <br> Build Yourself.
+                </h3>
+                <p class="rubik" style="color: #FCFAFA;">
+                    Join Venturebox and help us cultivate, fund and raise start-ups. Not only will you get a chance to partake in building the next billion-dollar companies, this will be your opportunity to build your professional career, while working and learning alongside a team of like-minded, mission-driven individuals with a desire to make a difference in the world. 
+                </p>
+                <a class="open-roles-btn rubik" href="careers.html#roles">
+                    View Open Roles
+                </a>
+            </div>
+        </div>
+
+        <section class="our-values-section">
+            <h3 class="display-4 poppins" style="font-weight: 600; color: var(--title_blue);" data-aos="fade-up">
+                Our Values
+            </h3>
+            <div class="our-values-buttons">
+                <button class="our-value-button" id="oneValue" data-aos="fade-up">
+                    <div class="our-values-border our-value-border-active" id="oneValueBorder">
+                        
+                    </div>
+                    <div class="our-value-column">
+                        <p class="rubik our-value-number" style="color: #555555;">
+                            01
+                        </p>
+                        <b class="our-value-btn-title rubik" style="font-weight: bold; color: var(--text_blue)">
+                            Commitment to Clients
+                        </b>
+                        <p class="rubik our-value-media-reveal" style="font-size: 0.9em; margin-top: 1em; display: none;" id="eins">
+                            Here at Venturebox, we value the dedication on providing high-quality special services to our clients and meeting their needs and expectations. It is of essence that you to commit to our clients, focus on building long-term relationships with them and create a positive overall experience.
+                        </p>
+                    </div>
+                </button>
+
+                <button class="our-value-button" id="twoValue" data-aos="fade-up">
+                    <div class="our-values-border" id="twoValueBorder">
+                        
+                    </div>
+                    <div class="our-value-column">
+                        <p class="rubik our-value-number" style="color: #555555;">
+                            02
+                        </p>
+                        <b class="our-value-btn-title rubik" style="font-weight: bold; color: var(--text_blue)">
+                            Always-Optimum Mindset
+                        </b>
+                        <p class="rubik our-value-media-reveal" style="font-size: 0.9em; margin-top: 1em; display: none;" id="zwei">
+                            We consider it vital for employees to have an optimal mindset which is the conviction that the best answers and results are always attainable. We encourage members to challenge presumptions, look for newly improved methods and pursue excellence in everything they do.
+                        </p>
+                    </div>
+                </button>
+
+                <button class="our-value-button" id="threeValue" data-aos="fade-up">
+                    <div class="our-values-border" id="threeValueBorder">
+                        
+                    </div>
+                    <div class="our-value-column">
+                        <p class="rubik our-value-number" style="color: #555555;">
+                            03
+                        </p>
+                        <b class="our-value-btn-title rubik" style="font-weight: bold; color: var(--text_blue)">
+                            High Risk <br class="high-risk-high-reward"> High Reward
+                        </b>
+                        <p class="rubik our-value-media-reveal" style="font-size: 0.9em; margin-top: 1em; display: none;" id="drei">
+                            At Venturebox, we support members who want to innovate and succeed to think outside the box, try new things, and take calculated risks. We appreciate high risk, high reward opportunities and commit considerable resources to novel, unproven concepts while acknowledging the possibility that they may not be successful. 
+                        </p>
+                    </div>
+                </button>
+
+                <button class="our-value-button" id="fourValue" data-aos="fade-up">
+                    <div class="our-values-border" id="fourValueBorder">
+                        
+                    </div>
+                    <div class="our-value-column">
+                        <p class="rubik our-value-number" style="color: #555555;">
+                            04
+                        </p>
+                        <b class="our-value-btn-title rubik" style="font-weight: bold; color: var(--text_blue)">
+                            Autonomous Culture
+                        </b>
+                        <p class="rubik our-value-media-reveal" id="vier" style="font-size: 0.9em; margin-top: 1em; display: none;">
+                            We encourage our employees to be independent and self-sufficient. Instead of being closely micromanaged or required to get permission before taking any action, all members are allowed the flexibility and autonomy to take charge of their own actions and find solutions to issues. 
+                        </p>
+                    </div>
+                </button>
+
+                <button class="our-value-button" id="fiveValue" data-aos="fade-up">
+                    <div class="our-values-border" id="fiveValueBorder">
+                        
+                    </div>
+                    <div class="our-value-column">
+                        <p class="rubik our-value-number" style="color: #555555;">
+                            05
+                        </p>
+                        <b class="our-value-btn-title rubik" style="font-weight: bold; color: var(--text_blue)">
+                            Intense Concentration
+                        </b>
+                        <p class="rubik our-value-media-reveal" id="funf" style="font-size: 0.9em; margin-top: 1em; display: none;">
+                            Venturebox can be more effective and efficient in reaching its goals if it keeps a clear and unified focus on a few key objectives. We stress the value of focusing on one activity at a time, avoiding excessive multitasking, and eliminating distractions. We can make sure that the organization's efforts are focused on attaining its highest priorities rather than being dispersed or diffused by keeping an eye on what matters the most. 
+                        </p>
+                    </div>
+                </button>
+            </div>
+            <div class="value-description-div" id="first" data-aos="fade-up">
+                <div class="value-description-text">
+                    <h1 class="h1 rubik">
+                        Commitment to Clients
+                    </h1>
+                    <p class="rubik">
+                        Here at Venturebox, we value the dedication on providing high-quality special services to our clients and meeting their needs and expectations. It is of essence that you to commit to our clients, focus on building long-term relationships with them and create a positive overall experience.
+                    </p>
+                </div>
+                <div class="value-description-image">
+                    <img src="commitment-clients.jpg" alt="" class="img-fluid">
+                </div>
+            </div>
+
+            <div class="value-description-div" id="second" data-aos="fade-up">
+                <div class="value-description-text">
+                    <h1 class="h1 rubik">
+                        Always-Optimum Mindset
+                    </h1>
+                    <p class="rubik">
+                        We consider it vital for employees to have an optimal mindset which is the conviction that the best answers and results are always attainable. We encourage members to challenge presumptions, look for newly improved methods and pursue excellence in everything they do. We place a strong focus on creativity and innovation, and we encourage everyone to think innovatively. A mindset of perpetual improvement can inspire us all to pursue our highest ambitions and achieve an environment of excellence.
+                    </p>
+                </div>
+                <div class="value-description-image">
+                    <img src="optimum.jpg" alt="" class="img-fluid">
+                </div>
+            </div>
+
+            <div class="value-description-div" id="third" data-aos="fade-up">
+                <div class="value-description-text">
+                    <h1 class="h1 rubik">
+                        High Risk, High Reward
+                    </h1>
+                    <p class="rubik">
+                        At Venturebox, we support members who want to innovate and succeed to think outside the box, try new things, and take calculated risks. We appreciate high risk, high reward opportunities and commit considerable resources to novel, unproven concepts while acknowledging the possibility that they may not be successful. In order to promote and encourage innovation and risk-taking, we also give employees who take calculated risks and succeed larger prizes and recognition.
+                    </p>
+                </div>
+                <div class="value-description-image">
+                    <img src="risk.jpg" alt="" class="img-fluid">
+                </div>
+            </div>
+
+            <div class="value-description-div" id="fourth" data-aos="fade-up">
+                <div class="value-description-text">
+                    <h1 class="h1 rubik">
+                        Autonomous Culture
+                    </h1>
+                    <p class="rubik">
+                        We encourage our employees to be independent and self-sufficient. Instead of being closely micromanaged or required to get permission before taking any action, all members are allowed the flexibility and autonomy to take charge of their own actions and find solutions to issues. Between our own managers and staff, there is a high degree of trust, and individual and group accountability is prioritised. An autonomous culture results in the ability to encourage a sense of ownership, accountability, and ownership among employees.
+                    </p>
+                </div>
+                <div class="value-description-image">
+                    <img src="autonomy.jpg" alt="" class="img-fluid">
+                </div>
+            </div>
+
+            <div class="value-description-div" id="fifth" data-aos="fade-up">
+                <div class="value-description-text">
+                    <h1 class="h1 rubik">
+                        Intense Concentration
+                    </h1>
+                    <p class="rubik">
+                        Venturebox can be more effective and efficient in reaching its goals if it keeps a clear and unified focus on a few key objectives. We stress the value of focusing on one activity at a time, avoiding excessive multitasking, and eliminating distractions. We can make sure that the organization's efforts are focused on attaining its highest priorities rather than being dispersed or diffused by keeping an eye on what matters the most. Focus can make an organisation more streamlined and effective, which increases the likelihood that it will succeed in attaining its objectives.
+                    </p>
+                </div>
+                <div class="value-description-image">
+                    <img src="concentration.jpg" alt="" class="img-fluid">
+                </div>
+            </div>
+        </section>
+        <div class="custom-shape-divider-top-1673362441" data-aos="fade">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <rect x="1200" height="3.6"></rect>
+                <rect height="3.6"></rect>
+                <path d="M0,0V3.6H580.08c11,0,19.92,5.09,19.92,13.2,0-8.14,8.88-13.2,19.92-13.2H1200V0Z" class="shape-fill"></path>
+            </svg>
+        </div>
+
+        <section class="work-with-us-section" id="roles">
+            <h3 class="display-4 poppins work-with-us-title" style="color: var(--title_blue);">
+                Work With Us
+            </h3>
+            <div class="open-roles-div">
+                <h3 class="h3 rubik" style="color: var(--title_blue)">
+                    Open Roles
+                </h3>
+                <a class="open-role" href="market-analyst.html">
+                    <div class="open-role-text">
+                        <h5 class="h5 rubik" style="font-weight: bold; color: var(--title_blue);">Market Analyst</h5>
+                        <p class="rubik" style="text-align: left;">Experienced market analyst sought for dynamic team. Analyze data, track market trends, inform business strategy. Competitive salary, benefits.</p>
+                    </div>
+                    <i class="fa fa-solid fa-square-arrow-up-right"></i>
+                </a>
+
+                <br>
+
+                <a class="open-role" href="senior-partner.html">
+                    <div class="open-role-text">
+                        <h5 class="h5 rubik" style="font-weight: bold; color: var(--title_blue);">Senior Partner</h5>
+                        <p class="rubik" style="text-align: left;">
+                            Senior Partner sought for leading consulting firm. Lead teams, develop strategies, drive growth. Proven success, extensive industry experience required.
+                        </p>
+                    </div>
+                    <i class="fa fa-solid fa-square-arrow-up-right"></i>
+                </a>
+
+                <br>
+
+                <a class="open-role" href="product-designer.html">
+                    <div class="open-role-text">
+                        <h5 class="h5 rubik" style="font-weight: bold; color: var(--title_blue);">Product Designer</h5>
+                        <p class="rubik" style="text-align: left;">
+                            Innovative product designer needed. Create user-centric designs, bring products to market. Strong portfolio, UX/UI experience required.
+                        </p>
+                    </div>
+                    <i class="fa fa-solid fa-square-arrow-up-right"></i>
+                </a>
+            </div>
+        </section>
+
+
+        <div class="cursor" style="z-index: 100;"></div>
+        <div class="cursor2" style="z-index: 100;"></div>
+
+        <!-- Back to Top start -->
+        <a href="#top">
+            <button onclick="topFunction()" id="myBtn"  class="shadow">
+                <i class="fa fa-duotone fa-arrow-up"></i>
+            </button>
+        </a>
+        <!-- back to top end -->
+
+        <footer style="position: absolute; background-color: white;">
+            <div class="footer-container">
+                <div class="footer-left">
+                    <a href="index.html">
+                        <img src="logo.svg" alt="" class="footer-logo img-fluid">
+                    </a>
+                </div>
+                <div class="footer-center">
+                    <a href="privacy-policy.html" class="privacy-policy-class" target="_blank">© 2023 All Rights Reserved.</a>
+                </div>
+                <div class="footer-left">
+                    <div class="social-media-contacts-footer">
+                        <a href="#">
+                            <i class="fa fa-brands fa-twitter"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa fa-brands fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        
+        <!-- footer end -->
+    
+        <!-- start of script  -->
+    
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+        <script src="main.js"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script src="particles.js"></script>
+        <script src="app.js"></script>
+        <script>
+            AOS.init();
+
+
+        function constantTest() {
+          if (sessionStorage.getItem("valueChoice") === "first") {
+            document.getElementById("first").style.display = "flex";
+
+            document.getElementById("first").classList.add("opactiy-animate");
+            document.getElementById("second").classList.remove("opactiy-animate");
+            document.getElementById("third").classList.remove("opactiy-animate");
+            document.getElementById("fourth").classList.remove("opactiy-animate");
+            document.getElementById("fifth").classList.remove("opactiy-animate");
+
+            document.getElementById("oneValueBorder").classList.add("our-value-border-active");
+            document.getElementById("twoValueBorder").classList.remove("our-value-border-active");
+            document.getElementById("threeValueBorder").classList.remove("our-value-border-active");
+            document.getElementById("fourValueBorder").classList.remove("our-value-border-active");
+            document.getElementById("fiveValueBorder").classList.remove("our-value-border-active");
+
+            document.getElementById("second").style.display = "none";
+
+            document.getElementById("third").style.display = "none";
+
+            document.getElementById("fourth").style.display = "none";
+
+            document.getElementById("fifth").style.display = "none";
+          } else if (sessionStorage.getItem("valueChoice") === "second") {
+
+            document.getElementById("first").classList.remove("opactiy-animate");
+            document.getElementById("second").classList.add("opactiy-animate");
+            document.getElementById("third").classList.remove("opactiy-animate");
+            document.getElementById("fourth").classList.remove("opactiy-animate");
+            document.getElementById("fifth").classList.remove("opactiy-animate");
+
+            document.getElementById("second").style.display = "flex";
+
+            document.getElementById("first").style.display = "none";
+
+            document.getElementById("third").style.display = "none";
+
+            document.getElementById("fourth").style.display = "none";
+
+            document.getElementById("oneValueBorder").classList.remove("our-value-border-active");
+            document.getElementById("twoValueBorder").classList.add("our-value-border-active");
+            document.getElementById("threeValueBorder").classList.remove("our-value-border-active");
+            document.getElementById("fourValueBorder").classList.remove("our-value-border-active");
+            document.getElementById("fiveValueBorder").classList.remove("our-value-border-active");
+
+            document.getElementById("fifth").style.display = "none";
+
+
+          } else if (sessionStorage.getItem("valueChoice") === "third") {
+
+            document.getElementById("first").classList.remove("opactiy-animate");
+            document.getElementById("second").classList.remove("opactiy-animate");
+            document.getElementById("third").classList.add("opactiy-animate");
+            document.getElementById("fourth").classList.remove("opactiy-animate");
+            document.getElementById("fifth").classList.remove("opactiy-animate");
+
+
+            document.getElementById("third").style.display = "flex";
+
+            document.getElementById("second").style.display = "none";
+
+            document.getElementById("first").style.display = "none";
+
+            document.getElementById("fourth").style.display = "none";
+
+            document.getElementById("fifth").style.display = "none";
+
+            document.getElementById("oneValueBorder").classList.remove("our-value-border-active");
+            document.getElementById("twoValueBorder").classList.remove("our-value-border-active");
+            document.getElementById("threeValueBorder").classList.add("our-value-border-active");
+            document.getElementById("fourValueBorder").classList.remove("our-value-border-active");
+            document.getElementById("fiveValueBorder").classList.remove("our-value-border-active");
+
+
+          } else if (sessionStorage.getItem("valueChoice") === "fourth") {
+
+            document.getElementById("first").classList.remove("opactiy-animate");
+            document.getElementById("second").classList.remove("opactiy-animate");
+            document.getElementById("third").classList.remove("opactiy-animate");
+            document.getElementById("fourth").classList.add("opactiy-animate");
+            document.getElementById("fifth").classList.remove("opactiy-animate");
+
+            document.getElementById("fourth").style.display = "flex";
+
+            document.getElementById("second").style.display = "none";
+
+            document.getElementById("third").style.display = "none";
+
+            document.getElementById("first").style.display = "none";
+
+            document.getElementById("fifth").style.display = "none";
+
+            document.getElementById("oneValueBorder").classList.remove("our-value-border-active");
+            document.getElementById("twoValueBorder").classList.remove("our-value-border-active");
+            document.getElementById("threeValueBorder").classList.remove("our-value-border-active");
+            document.getElementById("fourValueBorder").classList.add("our-value-border-active");
+            document.getElementById("fiveValueBorder").classList.remove("our-value-border-active");
+          } else if (sessionStorage.getItem("valueChoice") === "fifth"){
+
+            document.getElementById("first").classList.remove("opactiy-animate");
+            document.getElementById("second").classList.remove("opactiy-animate");
+            document.getElementById("third").classList.remove("opactiy-animate");
+            document.getElementById("fourth").classList.remove("opactiy-animate");
+            document.getElementById("fifth").classList.add("opactiy-animate");
+
+            document.getElementById("fifth").style.display = "flex";
+
+            document.getElementById("second").style.display = "none";
+
+            document.getElementById("third").style.display = "none";
+
+            document.getElementById("fourth").style.display = "none";
+
+            document.getElementById("first").style.display = "none";
+
+            document.getElementById("oneValueBorder").classList.remove("our-value-border-active");
+            document.getElementById("twoValueBorder").classList.remove("our-value-border-active");
+            document.getElementById("threeValueBorder").classList.remove("our-value-border-active");
+            document.getElementById("fourValueBorder").classList.remove("our-value-border-active");
+            document.getElementById("fiveValueBorder").classList.add("our-value-border-active");
+          } else {
+            document.getElementById("first").style.display = "flex";
+
+            document.getElementById("first").classList.add("opactiy-animate");
+            document.getElementById("second").classList.remove("opactiy-animate");
+            document.getElementById("third").classList.remove("opactiy-animate");
+            document.getElementById("fourth").classList.remove("opactiy-animate");
+            document.getElementById("fifth").classList.remove("opactiy-animate");
+
+            document.getElementById("oneValueBorder").classList.add("our-value-border-active");
+            document.getElementById("twoValueBorder").classList.remove("our-value-border-active");
+            document.getElementById("threeValueBorder").classList.remove("our-value-border-active");
+            document.getElementById("fourValueBorder").classList.remove("our-value-border-active");
+            document.getElementById("fiveValueBorder").classList.remove("our-value-border-active");
+
+            document.getElementById("second").style.display = "none";
+
+            document.getElementById("third").style.display = "none";
+
+            document.getElementById("fourth").style.display = "none";
+
+            document.getElementById("fifth").style.display = "none";
+          }
+        };
+
+          if (localStorage.getItem("who") != "") {
+            document.getElementById("sign-in-account").innerHTML = "Account";
+            document.getElementById('change-href').href = "my-account.html";
+            };
+
+        function clickTest() {
+            document.getElementById("oneValue").addEventListener("click", function() {
+            document.getElementById("oneValueBorder").classList.add("our-value-border-active");
+            document.getElementById("twoValueBorder").classList.remove("our-value-border-active");
+            document.getElementById("threeValueBorder").classList.remove("our-value-border-active");
+            document.getElementById("fourValueBorder").classList.remove("our-value-border-active");
+            document.getElementById("fiveValueBorder").classList.remove("our-value-border-active");
+
+            document.getElementById("first").classList.add("opactiy-animate");
+            document.getElementById("second").classList.remove("opactiy-animate");
+            document.getElementById("third").classList.remove("opactiy-animate");
+            document.getElementById("fourth").classList.remove("opactiy-animate");
+            document.getElementById("fifth").classList.remove("opactiy-animate");
+            
+            sessionStorage.setItem("valueChoice", "first");
+
+            document.getElementById("first").style.display = "flex";
+ 
+            document.getElementById("second").style.display = "none";
+
+            document.getElementById("third").style.display = "none";
+
+            document.getElementById("fourth").style.display = "none";
+
+            document.getElementById("fifth").style.display = "none";
+
+        });
+
+        document.getElementById("twoValue").addEventListener("click", function() {
+            document.getElementById("twoValueBorder").classList.add("our-value-border-active");
+            document.getElementById("oneValueBorder").classList.remove("our-value-border-active");
+            document.getElementById("threeValueBorder").classList.remove("our-value-border-active");
+            document.getElementById("fourValueBorder").classList.remove("our-value-border-active");
+            document.getElementById("fiveValueBorder").classList.remove("our-value-border-active");
+
+            document.getElementById("first").classList.remove("opactiy-animate");
+            document.getElementById("second").classList.add("opactiy-animate");
+            document.getElementById("third").classList.remove("opactiy-animate");
+            document.getElementById("fourth").classList.remove("opactiy-animate");
+            document.getElementById("fifth").classList.remove("opactiy-animate");
+
+            sessionStorage.setItem("valueChoice", "second");
+
+            document.getElementById("second").style.display = "flex";
+
+            document.getElementById("first").style.display = "none";
+
+            document.getElementById("third").style.display = "none";
+
+            document.getElementById("fourth").style.display = "none";
+
+            document.getElementById("fifth").style.display = "none";
+        });
+
+        document.getElementById("threeValue").addEventListener("click", function() {
+            document.getElementById("threeValueBorder").classList.add("our-value-border-active");
+            document.getElementById("twoValueBorder").classList.remove("our-value-border-active");
+            document.getElementById("oneValueBorder").classList.remove("our-value-border-active");
+            document.getElementById("fourValueBorder").classList.remove("our-value-border-active");
+            document.getElementById("fiveValueBorder").classList.remove("our-value-border-active");
+
+            document.getElementById("first").classList.remove("opactiy-animate");
+            document.getElementById("second").classList.remove("opactiy-animate");
+            document.getElementById("third").classList.add("opactiy-animate");
+            document.getElementById("fourth").classList.remove("opactiy-animate");
+            document.getElementById("fifth").classList.remove("opactiy-animate");
+
+            sessionStorage.setItem("valueChoice", "third");
+
+            document.getElementById("third").style.display = "flex";
+
+            document.getElementById("second").style.display = "none";
+
+            document.getElementById("first").style.display = "none";
+
+            document.getElementById("fourth").style.display = "none";
+
+            document.getElementById("fifth").style.display = "none";
+        });
+
+        document.getElementById("fourValue").addEventListener("click", function() {
+            document.getElementById("fourValueBorder").classList.add("our-value-border-active");
+            document.getElementById("twoValueBorder").classList.remove("our-value-border-active");
+            document.getElementById("threeValueBorder").classList.remove("our-value-border-active");
+            document.getElementById("oneValueBorder").classList.remove("our-value-border-active");
+            document.getElementById("fiveValueBorder").classList.remove("our-value-border-active");
+
+            document.getElementById("first").classList.remove("opactiy-animate");
+            document.getElementById("second").classList.remove("opactiy-animate");
+            document.getElementById("third").classList.remove("opactiy-animate");
+            document.getElementById("fourth").classList.add("opactiy-animate");
+            document.getElementById("fifth").classList.remove("opactiy-animate");
+        
+            sessionStorage.setItem("valueChoice", "fourth");
+
+            document.getElementById("fourth").style.display = "flex";
+
+            document.getElementById("second").style.display = "none";
+
+            document.getElementById("third").style.display = "none";
+
+            document.getElementById("first").style.display = "none";
+
+            document.getElementById("fifth").style.display = "none";
+        });
+
+        document.getElementById("fiveValue").addEventListener("click", function() {
+            document.getElementById("fiveValueBorder").classList.add("our-value-border-active");
+            document.getElementById("twoValueBorder").classList.remove("our-value-border-active");
+            document.getElementById("threeValueBorder").classList.remove("our-value-border-active");
+            document.getElementById("fourValueBorder").classList.remove("our-value-border-active");
+            document.getElementById("oneValueBorder").classList.remove("our-value-border-active");
+
+            document.getElementById("first").classList.remove("opactiy-animate");
+            document.getElementById("second").classList.remove("opactiy-animate");
+            document.getElementById("third").classList.remove("opactiy-animate");
+            document.getElementById("fourth").classList.remove("opactiy-animate");
+            document.getElementById("fifth").classList.add("opactiy-animate");
+
+            sessionStorage.setItem("valueChoice", "fifth");
+
+            document.getElementById("fifth").style.display = "flex";
+
+            document.getElementById("second").style.display = "none";
+
+            document.getElementById("third").style.display = "none";
+
+            document.getElementById("fourth").style.display = "none";
+
+            document.getElementById("first").style.display = "none";
+        });
+        }
+
+        const mediaQuery = window.matchMedia("(max-width: 710px)");
+
+        function clickTestMedia() {
+            document.getElementById("oneValue").addEventListener("click", function() {
+                document.getElementById("oneValueBorder").style.height = "100%";
+
+                // border active
+
+                document.getElementById("oneValueBorder").classList.add("our-value-border-active");
+                document.getElementById("twoValueBorder").classList.remove("our-value-border-active");
+                document.getElementById("threeValueBorder").classList.remove("our-value-border-active");
+                document.getElementById("fourValueBorder").classList.remove("our-value-border-active");
+                document.getElementById("fiveValueBorder").classList.remove("our-value-border-active");
+
+                // para display
+
+                sessionStorage.setItem("valueChoice", "first");
+
+                document.getElementById("eins").style.display = "inline";
+    
+                document.getElementById("zwei").style.display = "none";
+
+                document.getElementById("drei").style.display = "none";
+
+                document.getElementById("vier").style.display = "none";
+
+                document.getElementById("funf").style.display = "none";
+            })
+
+            document.getElementById("twoValue").addEventListener("click", function() {
+                document.getElementById("twoValueBorder").style.height = "100%";
+
+                // border active
+
+                document.getElementById("oneValueBorder").classList.remove("our-value-border-active");
+                document.getElementById("twoValueBorder").classList.add("our-value-border-active");
+                document.getElementById("threeValueBorder").classList.remove("our-value-border-active");
+                document.getElementById("fourValueBorder").classList.remove("our-value-border-active");
+                document.getElementById("fiveValueBorder").classList.remove("our-value-border-active");
+
+                // para display
+
+                sessionStorage.setItem("valueChoice", "second");
+
+                document.getElementById("eins").style.display = "none";
+
+                document.getElementById("zwei").style.display = "inline";
+
+                document.getElementById("drei").style.display = "none";
+
+                document.getElementById("vier").style.display = "none";
+
+                document.getElementById("funf").style.display = "none";
+            })
+
+            document.getElementById("threeValue").addEventListener("click", function() {
+                document.getElementById("threeValueBorder").style.height = "100%";
+
+                // border active
+
+                document.getElementById("oneValueBorder").classList.remove("our-value-border-active");
+                document.getElementById("twoValueBorder").classList.remove("our-value-border-active");
+                document.getElementById("threeValueBorder").classList.add("our-value-border-active");
+                document.getElementById("fourValueBorder").classList.remove("our-value-border-active");
+                document.getElementById("fiveValueBorder").classList.remove("our-value-border-active");
+
+                // para display
+
+                sessionStorage.setItem("valueChoice", "third");
+
+                document.getElementById("eins").style.display = "none";
+
+                document.getElementById("zwei").style.display = "none";
+
+                document.getElementById("drei").style.display = "inline";
+
+                document.getElementById("vier").style.display = "none";
+
+                document.getElementById("funf").style.display = "none";
+            })
+
+            document.getElementById("fourValue").addEventListener("click", function() {
+                document.getElementById("fourValueBorder").style.height = "100%";
+
+                // border active
+
+                document.getElementById("oneValueBorder").classList.remove("our-value-border-active");
+                document.getElementById("twoValueBorder").classList.remove("our-value-border-active");
+                document.getElementById("threeValueBorder").classList.remove("our-value-border-active");
+                document.getElementById("fourValueBorder").classList.add("our-value-border-active");
+                document.getElementById("fiveValueBorder").classList.remove("our-value-border-active");
+
+                // para display
+
+                sessionStorage.setItem("valueChoice", "fourth");
+
+                document.getElementById("eins").style.display = "none";
+
+                document.getElementById("zwei").style.display = "none";
+
+                document.getElementById("drei").style.display = "none";
+
+                document.getElementById("vier").style.display = "inline";
+
+                document.getElementById("funf").style.display = "none";
+            })
+
+            document.getElementById("fiveValue").addEventListener("click", function() {
+                document.getElementById("fiveValueBorder").style.height = "100%";
+
+                // border active
+
+                document.getElementById("oneValueBorder").classList.remove("our-value-border-active");
+                document.getElementById("twoValueBorder").classList.remove("our-value-border-active");
+                document.getElementById("threeValueBorder").classList.remove("our-value-border-active");
+                document.getElementById("fourValueBorder").classList.remove("our-value-border-active");
+                document.getElementById("fiveValueBorder").classList.add("our-value-border-active");
+
+                // para display
+
+                sessionStorage.setItem("valueChoice", "fifth");
+
+                document.getElementById("eins").style.display = "none";
+
+                document.getElementById("zwei").style.display = "none";
+
+                document.getElementById("drei").style.display = "none";
+
+                document.getElementById("vier").style.display = "none";
+
+                document.getElementById("funf").style.display = "inline";
+            })
+        }
+
+        function constantTestMedia() {
+            if (sessionStorage.getItem("valueChoice") === "first") {
+                document.getElementById("oneValueBorder").style.height = "100%";
+
+                // border active
+
+                document.getElementById("oneValueBorder").classList.add("our-value-border-active");
+                document.getElementById("twoValueBorder").classList.remove("our-value-border-active");
+                document.getElementById("threeValueBorder").classList.remove("our-value-border-active");
+                document.getElementById("fourValueBorder").classList.remove("our-value-border-active");
+                document.getElementById("fiveValueBorder").classList.remove("our-value-border-active");
+
+                // para display
+
+                sessionStorage.setItem("valueChoice", "first");
+
+                document.getElementById("eins").style.display = "inline";
+    
+                document.getElementById("zwei").style.display = "none";
+
+                document.getElementById("drei").style.display = "none";
+
+                document.getElementById("vier").style.display = "none";
+
+                document.getElementById("funf").style.display = "none";
+            } else if (sessionStorage.getItem("valueChoice") === "second") {
+                document.getElementById("twoValueBorder").style.height = "100%";
+
+                // border active
+
+                document.getElementById("oneValueBorder").classList.remove("our-value-border-active");
+                document.getElementById("twoValueBorder").classList.add("our-value-border-active");
+                document.getElementById("threeValueBorder").classList.remove("our-value-border-active");
+                document.getElementById("fourValueBorder").classList.remove("our-value-border-active");
+                document.getElementById("fiveValueBorder").classList.remove("our-value-border-active");
+
+                // para display
+
+                sessionStorage.setItem("valueChoice", "second");
+
+                document.getElementById("eins").style.display = "none";
+
+                document.getElementById("zwei").style.display = "inline";
+
+                document.getElementById("drei").style.display = "none";
+
+                document.getElementById("vier").style.display = "none";
+
+                document.getElementById("funf").style.display = "none";
+            } else if (sessionStorage.getItem("valueChoice") === "third") {
+                document.getElementById("threeValueBorder").style.height = "100%";
+
+                // border active
+
+                document.getElementById("oneValueBorder").classList.remove("our-value-border-active");
+                document.getElementById("twoValueBorder").classList.remove("our-value-border-active");
+                document.getElementById("threeValueBorder").classList.add("our-value-border-active");
+                document.getElementById("fourValueBorder").classList.remove("our-value-border-active");
+                document.getElementById("fiveValueBorder").classList.remove("our-value-border-active");
+
+                // para display
+
+                sessionStorage.setItem("valueChoice", "third");
+
+                document.getElementById("eins").style.display = "none";
+
+                document.getElementById("zwei").style.display = "none";
+
+                document.getElementById("drei").style.display = "inline";
+
+                document.getElementById("vier").style.display = "none";
+
+                document.getElementById("funf").style.display = "none";
+            } else if (sessionStorage.getItem("valueChoice") === "fourth") {
+                document.getElementById("fourValueBorder").style.height = "100%";
+
+                // border active
+
+                document.getElementById("oneValueBorder").classList.remove("our-value-border-active");
+                document.getElementById("twoValueBorder").classList.remove("our-value-border-active");
+                document.getElementById("threeValueBorder").classList.remove("our-value-border-active");
+                document.getElementById("fourValueBorder").classList.add("our-value-border-active");
+                document.getElementById("fiveValueBorder").classList.remove("our-value-border-active");
+
+                // para display
+
+                sessionStorage.setItem("valueChoice", "fourth");
+
+                document.getElementById("eins").style.display = "none";
+
+                document.getElementById("zwei").style.display = "none";
+
+                document.getElementById("drei").style.display = "none";
+
+                document.getElementById("vier").style.display = "inline";
+
+                document.getElementById("funf").style.display = "none";
+            } else if (sessionStorage.getItem("valueChoice") === "fifth"){
+                document.getElementById("fiveValueBorder").style.height = "100%";
+
+                // border active
+
+                document.getElementById("oneValueBorder").classList.remove("our-value-border-active");
+                document.getElementById("twoValueBorder").classList.remove("our-value-border-active");
+                document.getElementById("threeValueBorder").classList.remove("our-value-border-active");
+                document.getElementById("fourValueBorder").classList.remove("our-value-border-active");
+                document.getElementById("fiveValueBorder").classList.add("our-value-border-active");
+
+                // para display
+
+                sessionStorage.setItem("valueChoice", "fifth");
+
+                document.getElementById("eins").style.display = "none";
+
+                document.getElementById("zwei").style.display = "none";
+
+                document.getElementById("drei").style.display = "none";
+
+                document.getElementById("vier").style.display = "none";
+
+                document.getElementById("funf").style.display = "inline";
+            } else {
+                document.getElementById("oneValueBorder").style.height = "100%";
+
+                // border active
+
+                document.getElementById("oneValueBorder").classList.add("our-value-border-active");
+                document.getElementById("twoValueBorder").classList.remove("our-value-border-active");
+                document.getElementById("threeValueBorder").classList.remove("our-value-border-active");
+                document.getElementById("fourValueBorder").classList.remove("our-value-border-active");
+                document.getElementById("fiveValueBorder").classList.remove("our-value-border-active");
+
+                // para display
+
+                sessionStorage.setItem("valueChoice", "first");
+
+                document.getElementById("eins").style.display = "inline";
+    
+                document.getElementById("zwei").style.display = "none";
+
+                document.getElementById("drei").style.display = "none";
+
+                document.getElementById("vier").style.display = "none";
+
+                document.getElementById("funf").style.display = "none";
+            }
+        }
+
+        function handleScreenChange(e) {
+
+            if (e.matches) {
+                constantTestMedia();
+                clickTestMedia();
+            } else {
+                constantTest();
+                clickTest();
+            };
+        }
+
+        mediaQuery.addListener(handleScreenChange);
+        handleScreenChange(mediaQuery);
+        </script>
+</body>
+</html>
+

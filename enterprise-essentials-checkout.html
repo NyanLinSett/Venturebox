@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en" class="html">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Checkout</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+    <div class="cursor" style="z-index: 100;"></div>
+    <div class="cursor2" style="z-index: 100;"></div>
+
+    
+<div class="overflow-x-wrapper">
+
+    <!--Navbar Start-->
+    <nav class="navbar navbar-light navbar-expand-lg bg-light justify-content-center">
+        <div class="container">
+            <a href="index.html" class="navbar-brand d-flex w-50 mr-auto">
+                <img src="logo.svg" alt="" class="nav-logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="navbar-collapse collapse w-100" id="navbarSupportedContent">
+                <ul class="navbar-nav w-100 justify-content-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item dropdown active">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Hub
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="accelerator.html">Accelerator</a></li>
+                          <hr class="dropdown-divider">
+                          <li><a class="dropdown-item active" href="services.html">Services</a></li>
+                          <li><a class="dropdown-item" href="blog.html">Blog</a></li>
+                          <li><a class="dropdown-item" href="subscriptions.html">Subscriptions</a></li>
+                          <li><a href="careers.html" class="dropdown-item">Careers</a></li>
+                        </ul>
+                      </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav ml-auto w-100 justify-content-end">
+                    <a href="sign-in.html" id="change-href">
+                        <button class="btn btn-outline-primary sign-in-button rubik" id="sign-in-account">
+                            Sign In
+                        </button>
+                    </a>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--Navbar End-->
+
+
+<!-- start of services hero banner -->
+<section class="banner" style="max-width: 100vw;" id="checkout-banner">
+    <div class="banner-header">
+        <h1 class="display-1 poppins banner-heading" style="color: white;"  data-aos = "fade-right">
+            CHECKOUT
+            <div class="bottom_box" data-aos = "fade-right" style="z-index: 0;"></div>
+        </h1>
+    </div>
+</section>
+
+<section class="checkout-body">
+    <div class="personal-information-and-payment" data-aos="fade">
+        <div class="personal-information">
+            <div class="personal-information-side-by-side-div">
+                <div class="checkout-number poppins">
+                    <div class="checkout-number-inner">
+                        <p style="margin-bottom: 0;">1</p>
+                    </div>
+                </div>
+                <h3 class="poppins checkout-order-title">
+                    Personal Information
+                </h3>
+            </div>
+            <form class="personal-information-inputs" autocomplete="off">
+                <div class="message-name message-input-box checkout-input-box">
+                        <label class="message-small-desc poppins checkout-desc" for="name">Name</label>
+                        <input type="text"  name="name" id="checkout-name" placeholder="David Deep" class="rubik">
+                </div>
+                <div class="message-name message-input-box checkout-input-box">
+                    <label class="message-small-desc poppins checkout-desc" for="email">Email</label>
+                    <input type="email"  name="email" id="checkout-email" placeholder="daviddeep123@gmail.com" class="rubik">
+                </div>
+            </form>
+        </div>
+        <div class="payment">
+            <div class="payment-side-by-side-div">
+                <div class="checkout-number poppins">
+                    <div class="checkout-number-inner">
+                        <p style="margin-bottom: 0;">2</p>
+                    </div>
+                </div>
+                <h3 class="poppins checkout-order-title">
+                    Payment
+                </h3>
+            </div>
+            <form class="payment-inputs" autocomplete="off">
+                <div class="payment-type" style="flex-wrap: nowrap;">
+                    <button class="payment-button" type="button" id="paymentBtnCrypto">
+                        <div class="crypto payment-brand" id="CryptoActivate">
+                            <i class="fa fa-solid fa-bitcoin-sign" style="font-size: 1.25em;"></i>
+                            <h5 class="rubik" style="margin: 0;" for="radio">Crypto</h5>
+                        </div>
+                    </button>
+                    <button class="payment-button" type="button" id="paymentBtnCoD">
+                        <div class="credit-oder-debit payment-brand" style="flex-wrap: nowrap;" id="CoDActivate">
+                            <i class="fa fa-solid fa-credit-card"></i>
+                            <h5 class="rubik" style="margin: 0;" for="radio" style="flex-wrap: nowrap;">Credit or Debit <span id="card-hide">Card</span></h5>
+                        </div>
+                    </button>
+                </div>
+                <div class="CoD-inputs" id="CoDInputs">
+                    <div class="CoD-first-row">
+                        <div class="card-number individual-input-div">
+                            <label for="card-number" class="poppins indi-input-label">Card Number</label>
+                            <input type="text" id="card-number" class="rubik" placeholder="5555 5555 5555 4444">
+                        </div>
+                        <div class="card-number individual-input-div">
+                            <label for="card-number" class="poppins indi-input-label">Expiry Date</label>
+                            <input type="text" id="expiry-date" class="rubik" placeholder="MM/YY">
+                        </div>
+                    </div>
+                    <div class="card-number individual-input-div">
+                        <label for="card-number" class="poppins indi-input-label">CVC/CCV</label>
+                        <input type="text" id="cvc-number" class="rubik" placeholder="123">
+                    </div>
+                </div>
+                <div class="Crypto-inputs" id="Crypto-inputs">
+                    <div class="crypto-wallet-type checkout-input-box">
+                        <label class="register-desc poppins " for="register-select">Wallet</label>
+                        <select name="register-select" id="register-select"  class="rubik register-input register-select selectpicker form-select wallet-type checkout-input-box" style="background-color: #e9eaec; color: black;">
+                            <option value="Exodus">Exodus</option>
+                            <option value="Coinbase">Coinbase</option>
+                        </select>
+                    </div>
+                    <div class="receiving-address">
+                        <p class="poppins receiving-address-p">Receiving Address</p>
+                        <div class="receiving-address-num" style="display: flex; justify-content: space-between;">
+                            <span id="receiving-address-reveal" class="rubik" style="opacity: 0;">3FZbgi29cpjq2GjdwV8ey<br class="sacred-br">HuJJnkLtktZc5</span>
+                            <button class="fa fa-solid fa-eye" style="font-size: 1.25em;" id="show-click-btn" type="button" onclick="toggleSwitch()"></button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="order-summary-and-illustration">
+        <div class="order-summary">
+            <div class="order-summary-side-by-side-div">
+                <div class="checkout-number poppins">
+                    <div class="checkout-number-inner">
+                        <p style="margin-bottom: 0;">3</p>
+                    </div>
+                </div>
+                <div class="order-summary-actual-div">
+                    <h3 class="poppins checkout-order-title" style="flex-wrap: nowrap; white-space: nowrap;">
+                        Order Summary
+                    </h3>
+                    <div class="order-summary-item" id="order-summary-item">
+                        <div class="order-summary-item-left">
+                            <button class="fa fa-solid fa-minus fa-minus-minus" id="fa-minus-minus"></button>
+                            <p class="rubik order-summary-item-paragraph">Enterprise Essentials</p>
+                        </div>
+                        <div class="order-summary-item-right order-summary-item-paragraph item-price rubik">
+                            $9,999
+                        </div>
+                    </div>
+                    <div class="discount-code">
+                        <label class="poppins discount-code-title">
+                            Discount Code
+                        </label>
+                        <form class="discount-code-input-div" autocomplete="off">
+                            <input id="discount-code-input" class="discount-code-input rubik" placeholder="secretcode123">
+                            <button class="fa fa-solid fa-lock fa-button" id="discount-trigger" type="button"></button>
+                        </form>
+                        <div class="alert alert-primary" style="z-index: 1; position: relative;" id="incorectDiscount">
+                            <div class="alert-primary-row">
+                                <p class="rubik">Discount Code is not applicable!</p>
+                                <i class="fa fa-sharp fa-solid fa-circle-exclamation"></i>
+                            </div>
+                            <button class="no-style-button refresh-btn rubik" id="DiscountRefreshBtn">
+                                <p>Try Again</p>
+                                <i class="fa-solid fa-rotate-right"></i>
+                            </button>
+                        </div>
+
+                    </div>
+                    <div class="order-summary-final-facts">
+                        <h6 class="rubik" style="font-weight: bold;">Subtotal</h6>
+                        <div class="order-summary-item-right order-summary-item-paragraph item-price rubik" id="Subtotal-remove">
+                            $9,999
+                        </div>
+                    </div>
+                    <div class="order-summary-final-facts">
+                        <h6 class="rubik" style="font-weight: bold;">Discount</h6>
+                        <div class="order-summary-item-right order-summary-item-paragraph item-price rubik" id="discount-price">
+                            $<span id="discount-price-price"></span>
+                            <span>(<span id="discount-price-percentage"></span>%)</span>
+                        </div>
+                    </div>
+                    <div class="order-summary-final-facts">
+                        <h6 class="rubik" style="font-weight: bold;">Total</h6>
+                        <div class="order-summary-item-right order-summary-item-paragraph item-price rubik">
+                            $<span id="total">9,999</span>
+                        </div>
+                    </div>
+                    <div class="order-summary-final-facts checkbox-div">
+                        <input type="checkbox" id="checkbox">
+                        <label for="checkbox" class="rubik" style="color: lightslategray; ">I would like to receive news updates from Venturebox</label>
+                    </div>
+                    <div class="checkout-button-div">
+                        <button class="checkout-button btn btn-primary rubik" onclick="checkoutCheck()">Checkout</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="order-summary-illustration" id="order-summary-illustration">
+            <div class="image-absolute-div"  style="z-index: 0; position: absolute; padding-left: 0;">
+                <img src="checkout-illustration.png" class="img-fluid">
+            </div>
+        </div>
+    </div> 
+   
+</section>
+
+
+
+
+<!-- end of services hero banner -->
+
+
+
+
+<!-- footer start -->
+
+<footer style="position: absolute;">
+    <div class="footer-container">
+        <div class="footer-left">
+            <a href="index.html">
+                <img src="logo.svg" alt="" class="footer-logo img-fluid">
+            </a>
+        </div>
+        <div class="footer-center">
+            <a href="privacy-policy.html" class="privacy-policy-class" target="_blank">© 2023 All Rights Reserved.</a>
+        </div>
+        <div class="footer-left">
+            <div class="social-media-contacts-footer">
+                <a href="#">
+                    <i class="fa fa-brands fa-twitter"></i>
+                </a>
+                <a href="#">
+                    <i class="fa fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="#">
+                    <i class="fa fa-brands fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- footer end -->
+
+
+                <!-- Back to Top start -->
+                <a href="#top">
+                    <button onclick="topFunction()" id="myBtn"  class="shadow">
+                        <i class="fa fa-duotone fa-arrow-up"></i>
+                    </button>
+                </a>
+                <!-- back to top end -->
+</div>
+    
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+
+sessionStorage.setItem("mode", "crypto");
+
+if (localStorage.getItem("who") != "") {
+            document.getElementById("sign-in-account").innerHTML = "Account";
+            document.getElementById('change-href').href = "my-account.html";
+};
+
+
+      AOS.init();
+
+      document.getElementById("CryptoActivate").style.backgroundColor = "#f4efef";
+      document.getElementById("paymentBtnCrypto").addEventListener("click", function() {
+        document.getElementById("CryptoActivate").style.backgroundColor = "#f4efef";
+        document.getElementById("CoDActivate").style.backgroundColor = "#ffffff";
+        document.getElementById("CoDInputs").style.display = "none";
+        document.getElementById("Crypto-inputs").style.display = "flex";
+
+        sessionStorage.setItem("mode", "crypto");
+      })
+      document.getElementById("paymentBtnCoD").addEventListener("click", function() {
+        document.getElementById("CoDActivate").style.backgroundColor = "#f4efef";
+        document.getElementById("CryptoActivate").style.backgroundColor = "#ffffff";
+        document.getElementById("CoDInputs").style.display = "flex";
+        document.getElementById("Crypto-inputs").style.display = "none";
+
+        sessionStorage.setItem("mode", "card");
+        sessionStorage.setItem("paymentInfo", "")
+      })
+      function toggleSwitch() {
+        var x = document.getElementById("receiving-address-reveal");
+        if (x.style.opacity === "0") {
+            x.style.opacity = "1";
+            document.getElementById("show-click-btn").classList.remove("fa-eye");
+            document.getElementById("show-click-btn").classList.add("fa-eye-slash");
+        }
+        else if(x.style.opacity === "1"){
+            x.style.opacity = "0";
+            document.getElementById("show-click-btn").classList.remove("fa-eye-slash");
+            document.getElementById("show-click-btn").classList.add("fa-eye");
+        }
+      }
+
+      // discount code
+
+var discountPricePrice = document.getElementById("discount-price-price");
+var discountPercentage = document.getElementById("discount-price-percentage");
+
+discountPricePrice.innerHTML = "0";
+discountPercentage.innerHTML = "(0%)";
+localStorage.setItem("Price", 0);
+localStorage.setItem("Percentage", 0.2);
+localStorage.setItem("Enterprise", 9999);
+
+var Total = document.getElementById("total");
+
+var removeBTN = document.getElementById("fa-minus-minus");
+removeBTN.addEventListener("click", function() {
+  sessionStorage.setItem("removed", "yes");
+  sessionStorage.setItem("displayPercentage", 0);
+  if (sessionStorage.getItem("removed") == "yes") {
+    document.getElementById("discount-price-percentage").innerHTML = "0";
+    document.getElementById("discount-price-price").innerHTML = "0";
+    document.getElementById("Subtotal-remove").innerHTML = "$0";
+    Total.innerHTML = "0";
+    localStorage.setItem("Percentage", 0);
+    localStorage.setItem("Enterprise", 0);
+  };
+});
+
+(function alwaysCheckRemove() {
+  sessionStorage.setItem("displayPercentage", 0);
+  if (sessionStorage.getItem("removed") === "yes") {
+    document.getElementById("discount-price-price").innerHTML = "0";
+    subtotalRemove = document.getElementById("Subtotal-remove");
+    subtotalRemove.innerHTML = "$0";
+    document.getElementById("order-summary-item").style.display = "none";
+    Total.innerHTML = "0";
+    localStorage.setItem("Percentage", 0);
+    localStorage.setItem("Enterprise", 0);
+  };
+})()
+
+(function checkFunction(){
+
+  if (sessionStorage.getItem("clicked") === "yes") {
+
+    sessionStorage.setItem("discountCode", "iloveventurebox0943");
+    document.getElementById("discount-code-input").value = sessionStorage.getItem("discountCode");
+    var discountPercentageStringFilter = parseFloat(localStorage.getItem("Percentage"));
+
+    (function constantClickRemove() {
+      if (sessionStorage.getItem("removed") === "yes") {
+        sessionStorage.setItem("displayPercentage", 00);
+      } else {
+        sessionStorage.setItem("displayPercentage", 20)
+      }
+    })()
+
+    discountPercentage.innerHTML = sessionStorage.getItem("displayPercentage");
+
+
+    var Subtotal = localStorage.getItem("Enterprise");
+    toFixedFetch = (Subtotal * discountPercentageStringFilter);
+    toFixedFetchUsed = toFixedFetch.toFixed(2);
+
+    discountPricePrice.innerHTML = toFixedFetch.toFixed(2);
+    
+    document.getElementById("discount-trigger").setAttribute("disabled", "");
+    document.getElementById("discount-trigger").classList.add("disabled");
+    document.getElementById("discount-trigger").classList.add("fa-lock-open");
+
+    var Total = document.getElementById("total");
+
+    Total.innerHTML = (Subtotal - toFixedFetchUsed);
+  }
+  else {
+    sessionStorage.setItem("clicked", "");
+    discountPercentage.innerHTML = sessionStorage.getItem("displayPercentage");
+  }
+  let discountTriggerBtn = document.getElementById("discount-trigger");
+  discountTriggerBtn.addEventListener("click", function() {
+    if (sessionStorage.getItem("removed") == "yes") {
+      sessionStorage.setItem("displayPercentage", 0);
+    }
+    else {
+      sessionStorage.setItem("displayPercentage", 20);
+    }
+    let targetVar = document.getElementById("discount-code-input");
+    (function checkDiscount() {
+      var valueFiller = targetVar.value;
+      let discountCode = "iloveventurebox0943";
+
+      if (valueFiller === discountCode) {
+        var discountPercentageStringFilter = parseFloat(localStorage.getItem("Percentage"));
+        discountPercentage.innerHTML = sessionStorage.getItem("displayPercentage");
+        var Subtotal = localStorage.getItem("Enterprise");
+        toFixedFetch = (Subtotal * discountPercentageStringFilter);
+        toFixedFetchUsed = toFixedFetch.toFixed(2);
+        discountPricePrice.innerHTML = toFixedFetch.toFixed(2);
+
+
+
+
+        document.getElementById("discount-trigger").setAttribute("disabled", "");
+        document.getElementById("discount-trigger").classList.add("disabled");
+        document.getElementById("discount-trigger").classList.add("fa-lock-open");
+
+        sessionStorage.setItem("clicked", "yes");
+
+        var Total = document.getElementById("total");
+
+        Total.innerHTML = (Subtotal - toFixedFetchUsed);
+      }
+      else {
+        document.getElementById('incorectDiscount').style.display = "flex";
+
+        document.getElementById("DiscountRefreshBtn").addEventListener("click", function() {
+          location.reload();
+        })
+      }
+    }
+  )();
+})
+}());
+
+// start of checkout function
+
+function checkoutCheck() {
+
+    // personal information
+
+    var personalInfo = 0;
+
+    if (document.getElementById("checkout-name").value === "") {
+        sessionStorage.setItem("checkout-name", "");
+        var personalInfo = personalInfo + 1;
+        console.log(personalInfo);
+    } else {
+        sessionStorage.setItem("checkout-name", "gtg");
+    }
+
+    if (document.getElementById("checkout-email").value === "") {
+        sessionStorage.setItem("checkout-email", "");
+        var personalInfo = personalInfo + 1;
+        console.log(personalInfo);
+    } else if (document.getElementById("checkout-email").value.match(/^[A-Za-z\._\-0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/)) {
+        sessionStorage.setItem("checkout-email", "valid")
+    } else {
+        sessionStorage.setItem("checkout-email", "invalid");
+        console.log(personalInfo)
+    }
+
+    if (sessionStorage.getItem("checkout-email") === "invalid") {
+        alert("Email Invalid");
+    }
+
+    if (personalInfo == 1 || personalInfo == 2) {
+        sessionStorage.setItem("personalInfo", "");
+        alert("Personal Information Incomplete");
+    }
+
+    if (personalInfo == 0 && sessionStorage.getItem("checkout-email") === "valid") {
+        sessionStorage.setItem("personalInfo", "gtg");
+    }
+
+    // payment
+
+    if (sessionStorage.getItem("mode") === "crypto") {
+        sessionStorage.setItem("paymentInfo", "gtg");
+    } else {
+        if (sessionStorage.getItem("mode") === "card") {
+            if (document.getElementById("card-number").value === "" && document.getElementById("expiry-date").value === "" && document.getElementById("cvc-number").value === "") {
+                alert("Card Information Incomplete");
+            } else if (document.getElementById("card-number").value != "" && document.getElementById("expiry-date").value === "" && document.getElementById("cvc-number").value === ""){
+                alert("Expiry Date and CVC/ CCV Number missing");
+            } else if (document.getElementById("card-number").value != "" && document.getElementById("expiry-date").value != "" && document.getElementById("cvc-number").value === "") {
+                alert("CVC/CCV Number missing");
+            }
+            if (document.getElementById("card-number").value != "" && document.getElementById("expiry-date").value != "" && document.getElementById("cvc-number").value != "") {
+                sessionStorage.setItem("paymentInfo", "gtg")
+            }
+        } 
+    }
+
+    if (sessionStorage.getItem("removed") === "yes") {
+        alert("No item has been selected.")
+    }
+
+    if (sessionStorage.getItem("removed") != "yes" && sessionStorage.getItem("paymentInfo") === "gtg" && sessionStorage.getItem("personalInfo") === "gtg") {
+        window.open("checkout-successful.html", "_self");
+    };
+}
+// discount code end
+    </script>
+</body>
+</html>

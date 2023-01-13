@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en" class="html">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <title>Venturebox</title>
+</head>
+<body class="registeration-body" id="free-call">
+    <div class="cursor" style="z-index: 100;"></div>
+    <div class="cursor2" style="z-index: 100;"></div>
+
+    <!--Navbar Start-->
+    <nav class="navbar navbar-light navbar-expand-lg bg-light justify-content-center">
+        <div class="container">
+            <a href="index.html" class="navbar-brand d-flex w-50 mr-auto">
+                <img src="logo.svg" alt="" class="nav-logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="navbar-collapse collapse w-100" id="navbarSupportedContent">
+                <ul class="navbar-nav w-100 justify-content-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item dropdown active">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Hub
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="accelerator.html">Accelerator</a></li>
+                          <hr class="dropdown-divider">
+                          <li><a class="dropdown-item active" href="services.html">Services</a></li>
+                          <li><a class="dropdown-item" href="blog.html">Blog</a></li>
+                          <li><a class="dropdown-item" href="subscriptions.html">Subscriptions</a></li>
+                          <li><a href="careers.html" class="dropdown-item">Careers</a></li>
+                        </ul>
+                      </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav ml-auto w-100 justify-content-end">
+                    <a href="sign-in.html" id="change-href">
+                        <button class="btn btn-outline-primary sign-in-button rubik" id="sign-in-account">
+                            Sign In
+                        </button>
+                    </a>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--Navbar End-->
+
+    <!-- start of registeration section -->
+    
+    <div class="registeration-title-div">
+        <h1 class="display-3 poppins">Purchase Information</h1>
+        <div class="bottom_box bottom_box-register">
+
+        </div>
+    </div>
+<div class="register-card-parent">
+    <div class="register-card free-purchase-card" id="free-call">
+        <div class="register-logo">
+            <img src="logo.svg" alt="" class="img-fluid">
+        </div>
+        <form autocomplete="off" class="register-form" id="refresh-form">
+            <div class="register-input-div" id="register-text">
+                <label class="register-desc poppins" for="email">Name</label>
+                <input type="text"  name="text" id="free-name" placeholder="David Deep" class="rubik register-input">
+            </div>
+            <div class="register-input-div" id="register-email">
+                <label class="register-desc poppins" for="email">Email</label>
+                <input type="email"  name="email" id="free-email" placeholder="daviddeep123@gmail.com" class="rubik register-input">
+            </div>
+                <button class="btn btn-lg callout-button" id="register-toast" type="button" onclick="freeCheck()">
+                    Purchase
+                </button>
+
+        </form>
+    </div>
+    <div class="toast-custom" id="custom-toast">
+        <div class="toast-header rubik">
+            <strong>Successfully Acquired</strong>
+            <button class="close-button" type="button" onclick="hide()">
+                <i class="fa fa-solid fa-minus close"></i>
+            </button>
+        </div>
+        <div class="toast-body rubik">
+            You have successfully acquired your product. Please check your email for further information.
+        </div>
+    </div>
+</div>
+    
+
+
+
+
+
+
+                <!-- Back to Top start -->
+                <a href="#top">
+                    <button onclick="topFunction()" id="myBtn"  class="shadow">
+                        <i class="fa fa-duotone fa-arrow-up"></i>
+                    </button>
+                </a>
+                <!-- back to top end -->
+    
+
+                <!-- footer start -->
+
+<footer style="background-color: white;" class="footer-special footer-special-free-purchase" >
+    <div class="footer-container">
+        <div class="footer-left">
+            <a href="index.html">
+                <img src="logo.svg" alt="" class="footer-logo img-fluid">
+            </a>
+        </div>
+        <div class="footer-center">
+            <a href="privacy-policy.html" class="privacy-policy-class" target="_blank">© 2023 All Rights Reserved.</a>
+        </div>
+        <div class="footer-left">
+            <div class="social-media-contacts-footer">
+                <a href="#">
+                    <i class="fa fa-brands fa-twitter"></i>
+                </a>
+                <a href="#">
+                    <i class="fa fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="#">
+                    <i class="fa fa-brands fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- footer end -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&sensor=TRUE_OR_FALSE"></script>
+    <script>
+      AOS.init();
+
+      function freeCheck() {
+        if (document.getElementById("free-name").value === "") {
+            sessionStorage.setItem("free-name-status", "")
+        } else {
+            sessionStorage.setItem("free-name-status", "gtg")
+        }
+
+        if (document.getElementById("free-email").value === "") {
+            sessionStorage.setItem("free-email-status", "");
+        } else if(document.getElementById("free-email").value.match(/^[A-Za-z\._\-0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/)) {
+            sessionStorage.setItem("free-email-status", "gtg")
+        } else {
+            sessionStorage.setItem("free-email-status", "invalid")
+        }
+
+        if(sessionStorage.getItem("free-name-status") === "gtg" &&  sessionStorage.getItem("free-email-status") === "gtg") {
+            toast();
+            refresh();
+        }
+
+        if (sessionStorage.getItem("free-name-status") === "" &&  sessionStorage.getItem("free-email-status") === "") {
+            alert("Both are empty")
+        }else if (sessionStorage.getItem("free-email-status") === ""){
+            alert("Email is empty")
+        } else if (sessionStorage.getItem("free-email-status") === "invalid") {
+            alert("Email is invalid")
+        } else if (sessionStorage.getItem("free-name-status") === "") {
+            alert("Name is empty");
+        }
+      }
+
+      if (localStorage.getItem("who") != "") {
+            document.getElementById("sign-in-account").innerHTML = "Account";
+            document.getElementById('change-href').href = "my-account.html";
+        };
+
+
+    </script>
+</body>
+</html>

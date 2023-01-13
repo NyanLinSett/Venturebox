@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <title>Venturebox - Contact</title>
+</head>
+<body style="background-color: #F4E8D8">
+    <div class="cursor" style="z-index: 100;"></div>
+    <div class="cursor2" style="z-index: 100;"></div>
+
+    <!--Navbar Start-->
+    <nav class="navbar navbar-light navbar-expand-lg bg-light justify-content-center" >
+        <div class="container"> 
+            <a href="index.html" class="navbar-brand d-flex w-50 mr-auto">
+                <img src="logo.svg" alt="" class="nav-logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="navbar-collapse collapse w-100" id="navbarSupportedContent">
+                <ul class="navbar-nav w-100 justify-content-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Hub
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="accelerator.html">Accelerator</a></li>
+                          <hr class="dropdown-divider">
+                          <li><a class="dropdown-item" href="services.html">Services</a></li>
+                          <li><a class="dropdown-item" href="blog.html">Blog</a></li>
+                          <li><a class="dropdown-item" href="subscriptions.html">Subscriptions</a></li>
+                          <li><a href="careers.html" class="dropdown-item">Careers</a></li>
+                        </ul>
+                      </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav ml-auto w-100 justify-content-end">
+                    <a href="sign-in.html" id="change-href">
+                        <button class="btn btn-outline-primary sign-in-button rubik" id="sign-in-account">
+                            Sign In
+                        </button>
+                    </a>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--Navbar End-->
+
+    <!-- start of margin-wrapper  -->
+
+    <div class="margin-wrapper-contact my-5">
+        <div class="contact-text">
+            <h2 class="display-2 poppins">
+                <span class="contact-contact">Contact</span> Us
+            </h2>
+            <h6 class="contact-inquiries rubik">
+                Any inquries? Reach out to us. It is our pleasure to lend a helping hand.
+            </h6>
+        </div>
+        <div class="message-wrapper shadow-lg">
+            <div class="message-left w-60-contact">
+                <h3 class="message-message poppins">
+                    Message
+                </h3>
+                <form class="message-input-flexes" autocomplete="off">
+                    <div class="message-first-row">
+                        <div class="message-name message-input-box">
+                            <label class="message-small-desc poppins" for="name">Name</label>
+                            <input type="text"  name="name" id="c-name" placeholder="David Deep" class="rubik">
+                        </div>
+                        <div class="message-ph-number message-input-box">
+                            <label class="message-small-desc poppins" for="phone">Phone Number</label>
+                            <input type="tel" name="phone" id="c-phone" placeholder="09123456789" class="rubik">
+                        </div>
+                    </div>
+                    <div class="message-second-row">
+                        <div class="message-name message-input-box">
+                            <label class="message-small-desc poppins" for="email">Email</label>
+                            <input type="email"  name="email" id="c-email" placeholder="daviddeep123@gmail.com" class="rubik">
+                        </div>
+                        <div class="message-ph-number message-input-box">
+                                <label class="message-small-desc poppins" for="phone">Subject</label>
+                                <input type="text" name="text" id="c-subject" placeholder="Service Inquiry" class="rubik">
+                        </div>
+                    </div>
+                    <div class="message-third-row">
+                        <label class="message-small-desc poppins" for="message">Message</label>
+                        <textarea name="message" id="c-message" cols="15" rows="5" placeholder="Hello. I am David Deep. Nice to meet you . . . " class="rubik"></textarea>
+                    </div>
+                </form>
+
+                    <button class="btn btn-lg callout-button" type="submit" style="max-width: 50%;" onclick="contactCheck()">
+                        Submit
+                    </button>
+            </div>
+                <div class="message-right w-40-contact" >
+                    <div class="contact-text">
+                        <h3 class="message-contact poppins">
+                            Contact Info
+                        </h3>
+                        <p class="expect-reply rubik">
+                            <span class="expect-reply-hide">Fill up the form. Express your curiosity or suggestions. </span> You may expect a reply from our team within a week. Thank you for working with us.</p>
+                    </div>
+                    <div class="contact-information-list">
+                        <div class="contact-info-email contact-info-row">
+                            <i class="fa fa-light fa-envelope"></i>
+                            <p>contact@venturebox.com</p>
+                        </div>
+                        <div class="contact-info-phone contact-info-row">
+                            <i class="fa fa-light fa-phone"></i>
+                            <p>+40 124 691 863</p>
+                        </div> 
+                        <div class="contact-info-location contact-info-row">
+                            <i class="fa fa-light fa-map"></i>
+                            <p>Bay Area, Silicon Valley, San Francisco, USA
+                            </p>
+                        </div>
+                        <div class="contact-info-location-more contact-info-row">
+                            <i class="fa fa-light fa-map" style="visibility: hidden!important;"></i>
+                            <p>Venturebox City, South Dagon, Yangon, Myanmar</p>
+                        </div>
+                        <div class="contact-info-location-more contact-info-row">
+                            <i class="fa fa-light fa-map" style="visibility: hidden!important;"></i>
+                            <p>Venturebox Island, Berlin, Germany</p>
+                        </div>
+                    </div>
+                    <div class="social-media-contacts-contact-info">
+                        <a href="#">
+                            <i class="fa fa-brands fa-twitter"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa fa-brands fa-google"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- end of margin-wrapper -->
+
+
+    <!-- footer start -->
+
+<footer style="position: absolute; background-color: white;">
+    <div class="footer-container">
+        <div class="footer-left">
+            <a href="index.html">
+                <img src="logo.svg" alt="" class="footer-logo img-fluid">
+            </a>
+        </div>
+        <div class="footer-center">
+            <a href="privacy-policy.html" class="privacy-policy-class" target="_blank">© 2023 All Rights Reserved.</a>
+        </div>
+        <div class="footer-left">
+            <div class="social-media-contacts-footer">
+                <a href="#">
+                    <i class="fa fa-brands fa-twitter"></i>
+                </a>
+                <a href="#">
+                    <i class="fa fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="#">
+                    <i class="fa fa-brands fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- footer end -->
+
+    <!-- Back to Top start -->
+    <a href="#top">
+        <button onclick="topFunction()" id="myBtn"  class="shadow">
+            <i class="fa fa-duotone fa-arrow-up"></i>
+        </button>
+    </a>
+    <!-- back to top end -->
+
+    <!-- start of script  -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+
+      if (localStorage.getItem("who") != "") {
+            document.getElementById("sign-in-account").innerHTML = "Account";
+        };
+    
+        window.onbeforeunload = function() {
+            return "Change you made may not be saved";
+        };
+    </script>
+</body>
+</html>
