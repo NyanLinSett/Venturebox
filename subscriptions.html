@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <title>Venturebox Hub: Subscriptions</title>
+    <style type="text/css">
+
+        /*banner*/
+        .banner {
+            background-image: url(banner.png);
+            height: 100vh;
+            background-size: cover;
+            background-position: contain;
+            background-attachment: fixed;
+        }
+
+        .bottom_box {
+            background-color: var(--main_orange);
+            height: 0.2em;
+            width: 20%;
+            position: absolute;
+        }
+
+        .banner-heading, .banner-description{
+            letter-spacing: 0.15em;
+        }
+
+        .banner-header {
+            display: flex;
+            gap: 2.5em;
+            flex-direction: column;
+            margin-left: 10%;
+            margin-right: 10%;
+        }
+        /*banner end*/
+        /*what we offer section*/
+        .what-we-offer-section {
+            background-color: #1D2538;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .what-we-offer-main-div {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin-left: 10%;
+            margin-right: 10%;
+            gap: 3em;
+        }
+        .wwo-div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 2em;
+        }
+        .two-buttons-div{
+            display: flex;
+            flex-direction: row;
+            gap: 1.5em;
+        }
+        .two-buttons{
+            background-color: var(--main_orange);
+            width: 14em;
+            padding: 1.2em;
+            color: white;
+            border-radius: 1em;
+        }
+        .enter-button{
+            margin-left: 1em;
+        }
+        /*what we offer section end*/
+        /*solopreneur and enterprise sections*/
+        .solopreneur-main-div {
+            display: flex;
+            flex-direction: column;
+            margin-left: 10%;
+            margin-right: 10%;
+            padding-top: 3em;
+        }
+        .enterprise-main-div {
+            display: flex;
+            flex-direction: column;
+            margin-left: 10%;
+            margin-right: 10%;
+            padding-top: 1em;
+        }
+        .who-main-div{
+            padding-top: 5em;
+            max-width: 80%;
+        }
+        .who-title{
+            font-size: 3em;
+        }
+        .who-text{
+            padding-top: 1.2em;
+        }
+        .who-div{
+            border: none;
+        }
+        .wwyg-main-div{
+            max-width: 80%;
+        }
+        .wwyg-title{
+            font-size: 3em;
+        }
+        .wwyg-text{
+            padding-top: 1.2em;
+        }
+        .wwyg-div{
+            border: none;
+        }
+        .sub-button{
+            background-color: var(--main_orange);
+            width: 100%;
+            padding: 1.2em;
+            color: white;
+            border: none;
+            border-radius: 1em;
+            box-shadow: rgb(255, 123, 0) 0px 9px 25px -6px;
+        }
+        /*solopreneur and enterprise sections end*/
+        /*sub medias*/
+        @media (max-width: 800px){
+            .wwyg-main-div{
+                margin-left: 5%;
+            }
+        }
+        @media (max-width: 715px){
+            .two-buttons-div{
+                flex-direction: column;
+            }
+            .who-div {
+                max-width: 100%;
+                border-radius: 2em;
+                padding: 1em 1em;
+            }
+            .wwyg-div {
+                max-width: 100%;
+                border-radius: 2em;
+                padding: 1em 1em;
+            }
+            .wwyg-text {
+                font-size: 0.9em;
+            }
+            .who-text {
+                font-size: 0.9em;
+            }
+            .card-title {
+                font-size: 1.5em;
+            }
+            .two-buttons{
+                width: 75%;
+            }
+            .enter-button{
+                margin-left: 0;
+                margin-top: 1em;
+            }
+            .img-tree-div{
+                display: none;
+            }
+            .wwo-div{
+                margin-right: 0;
+                margin-top: 0;
+                text-align: center;
+                padding-bottom: 1em;
+                width: 100%;
+                
+            }
+            .who-img, .who-img-div{
+                display: none;
+            }
+            .card-body, .card {
+                width: 100%;
+            }
+            .who-div{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+            .who-main-div{
+                margin-left: 10%;
+                margin-right: 10%;
+                padding-top: 0;
+                max-width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: none;
+                border-radius: 2em;
+                box-shadow: rgba(85, 85, 85, 0.612) 0px 5px 15px;
+            }
+            .wwyg-img , .wwyg-img-div{
+                display: none;
+            }
+            .wwyg-div{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-right: 0;
+                margin-top: 0;
+            }
+            .wwyg-main-div{
+                margin-left: 10%;
+                margin-right: 10%;
+                padding-top: 0;
+                max-width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: none;
+                border-radius: 2em;
+                box-shadow: rgba(85, 85, 85, 0.612) 0px 5px 15px;
+            }
+        }
+        /*sub medias end*/
+        /* start of footer  */
+        footer {
+            height: fit-content;
+            border-top: 1px solid #D6D6D6;
+            width: 100%;
+            scroll-snap-align: start;
+            
+        }
+
+        .footer-logo {
+            height: 2em;
+        }
+
+        .footer-right {
+            justify-self: flex-start;
+        }
+
+        .social-media-contacts-footer > a > i{
+            font-size: 2em;
+            color: var(--main_orange)!important;
+            transition: color 0.2s ease-in-out, opacity 0.2s ease-in-out, transform 0.4s ease-in-out;
+        }
+
+        .social-media-contacts-footer > a > i:hover {
+            color: #273150!important;
+            opacity: 50%;
+            transform: rotate(360deg);
+        }
+
+        .footer-center {
+            font-size: 1em;
+            font-family: 'Circular Std', sans-serif;
+        }
+
+        .social-media-contacts-footer {
+            display: flex;
+            justify-content: space-between;
+            width: 10em;
+        }
+
+        img.footer-logo{
+            transition: filter 0.2s ease-in-out, -webkit-filter 0.2s ease-in-out;
+        }
+
+        img.footer-logo:hover {
+            filter: gray; 
+            -webkit-filter: grayscale(1); 
+            filter: grayscale(1);
+        }
+
+        .footer-container {
+            display: flex;
+            justify-content: space-between;
+            padding: 1.5em;
+            margin-left: 10%;
+            margin-right: 10%;
+            width: 80%;
+            align-items: center;
+        }
+        /* start of footer media */
+
+        @media (max-width: 950px) {
+            .footer-logo {
+                height: 1.5em;
+            }
+            .social-media-contacts-footer > a > i{
+                font-size: 1.5em;
+            }
+            .footer-center {
+                font-size: .8em;
+                font-family: 'Circular Std', sans-serif;
+            }
+            .social-media-contacts-footer {
+                width: 8em;
+            }
+
+        }
+
+
+        @media (max-width: 720px) {
+            .footer-logo {
+                height: 1.25em;
+            }
+            .social-media-contacts-footer > a > i{
+                font-size: 1.25em;
+            }
+            .footer-center {
+                font-size: .69em;
+                font-family: 'Circular Std', sans-serif;
+            }
+            .social-media-contacts-footer {
+                width: 6.9em;
+            }
+
+        }
+
+        @media (max-width: 550px) {
+            .footer-container {
+                flex-direction: column;
+                height: 12.5em;
+            }
+            .footer-logo {
+                height:2em;
+            }
+            .social-media-contacts-footer > a > i{
+                font-size: 1.75em;
+            }
+            .footer-center {
+                font-size: 1em;
+                font-family: 'Circular Std', sans-serif;
+            }
+            .social-media-contacts-footer {
+                width: 6.9em;
+            }
+        }
+        /* end of footer */
+    </style>
+</head>
+<body>
+
+    <div class="cursor" style="z-index: 100;"></div>
+    <div class="cursor2" style="z-index: 100;"></div>
+    <!--Navbar Start-->
+    <nav class="navbar navbar-light navbar-expand-lg bg-light justify-content-center">
+        <div class="container">
+            <a href="index.html" class="navbar-brand d-flex w-50 mr-auto">
+                <img src="logo.svg" alt="" class="nav-logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="navbar-collapse collapse w-100" id="navbarSupportedContent">
+                <ul class="navbar-nav w-100 justify-content-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item dropdown active" active>
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Hub
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="accelerator.html">Accelerator</a></li>
+                          <hr class="dropdown-divider">
+                          <li><a class="dropdown-item" href="services.html" >Services</a></li>
+                          <li><a class="dropdown-item" href="blog.html">Blog</a></li>
+                          <li><a class="dropdown-item active" href="subscriptions.html">Subscriptions</a></li>
+                          <li><a href="careers.html" class="dropdown-item">Careers</a></li>
+                        </ul>
+                      </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav ml-auto w-100 justify-content-end">
+                    <a href="sign-in.html" id="change-href">
+                        <button class="btn btn-outline-primary sign-in-button rubik" id="sign-in-account">
+                            Sign In
+                        </button>
+                    </a>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--Navbar End-->
+
+<div class="overflow-x-wrapper">
+<!-- start of services hero banner -->
+<section class="banner" style="max-width: 100vw;">
+    <div class="banner-header">
+        <h1 class="display-1 poppins banner-heading" style="color: white;"  data-aos = "fade-right">
+            VENTUREBOX HUB
+            <div class="bottom_box" data-aos = "fade-right" style="z-index: 0;"></div>
+        </h1>
+        <h5 class="display-5 rubik banner-description" style="color: white;"  data-aos = "fade-right">
+            Subscriptions
+        </h5>
+    </div>
+</section>
+
+
+
+
+<!-- end of services hero banner -->
+
+ <!--Section 2 Start-->
+ <section class="what-we-offer-section">
+    <div class="what-we-offer-main-div">
+        <div class="wwo-div" data-aos="slide-right">
+            <h1 class="wwo-title text-light poppins"><strong>What We Offer</strong></h1>
+            <p class="wwo-text text-light rubik">At the moment, we offer two subscriptions: one for solopreneurs who want to take their start-up to the next leveland one for enterprises looking to propel to the next stage of business success.</p>
+            <div class="two-buttons-div">
+                <a href="#solopreneur" class="solo-button two-buttons btn btn-primary btn-outline-dark rubik">Solopreneur</a>
+                <a href="#enterprise" class="enter-button two-buttons btn btn-primary btn-outline-dark rubik">Enterprise</a>
+            </div>
+        </div>
+        <div class="img-tree-div" data-aos="fade">
+            <img src="sub_img2.png" class="img-tree img-fluid">
+        </div>
+    </div>
+ </section>
+ <!--Section 2 End-->
+ <!--Section 3 Start-->
+ <section class="solopreneur-section" id="solopreneur">
+    <div class="subscriptions-wrapper">
+        <div class="solopreneur-main-div" data-aos="slide-right">
+            <h1 class="display-1 poppins solopreneur-heading">
+                Solopreneur
+                <div class="bottom_box"></div>
+            </h1>
+        </div>
+        <div class="who-main-div wrapper wrapper" style="display: flex; align-items: center;" data-aos="fade-left">
+            <div class="who-img-div w-70">
+                <img src="sub_img3.png" alt="" class="who-img img-fluid">
+            </div>
+            <div class="who-div card" style="border: 0;">
+                <div class="card-body" style="display: flex; flex-direction: column;">
+                    <h1 class="who-title card-title poppins" style="text-align: center">
+                    Who is this subscription for?
+                    </h1>
+                    <p class="who-text card-text rubik">The solopreneur subscription is a perfect fit for leaders and prospective CEOs who have in mind the greatest ideas, but are lost with where to start, how to create a business model, how to lead a team to success and thrive as a start-up.</p>
+                </div>
+            </div>
+        </div>
+        <div class="wwyg-main-div wrapper wrapper" style="display: flex; align-items: center;" data-aos="fade-right">
+            <div class="wwyg-div card" style="border: 0;">
+                <div class="card-body" style="display: flex; flex-direction: column;">
+                    <h1 class="wwyg-title card-title poppins" style="text-align: center">
+                        What will you get?
+                    </h1>
+                    <ul class="wwyg-text rubik card-text" style="list-style-position: outside;">
+                        <li>Learn essential leadership skills</li>
+                        <li>Learn how to use commercial language</li>
+                        <li>Learn Decision-making philosophies</li>
+                        <li>Work on Case Studies and practical projects</li>
+                        <li>Be invited to Solopreneurs networking party</li>
+                        <li>Get a change to win up to 50% discount every month</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="wwyg-img-div w-70">
+                <img src="sub_img4.png" alt="" class="wwyg-img img-fluid">
+            </div>
+        </div>
+        <div class="sub-button-div" data-aos="fade">
+            <a href="solopreneur-checkout-root.html" class="sub-button btn btn-primary rubik">Subscribe Now</a>
+        </div>
+    </div>
+</section>
+<!--Section 3 End-->
+
+<!-- start of enterprise section -->
+
+<section class="solopreneur-section" id="enterprise" style="padding-bottom: 10%;">
+    <div class="subscriptions-wrapper">
+        <div class="solopreneur-main-div" data-aos="slide-right">
+            <h1 class="display-1 poppins solopreneur-heading">
+                Enterprise
+                <div class="bottom_box"></div>
+            </h1>
+        </div>
+        <div class="who-main-div wrapper wrapper" style="display: flex; align-items: center;" data-aos="fade-left">
+            <div class="who-img-div w-70">
+                <img src="enterprise-who.png" alt="" class="who-img img-fluid">
+            </div>
+            <div class="who-div card" style="border: 0;">
+                <div class="card-body" style="display: flex; flex-direction: column;">
+                    <h1 class="who-title card-title poppins" style="text-align: center">
+                    Who is this subscription for?
+                    </h1>
+                    <p class="who-text card-text rubik">If you have already advanced your business to a certain stage, the Enterprise subscription will help you scale it up and take you through the steps needed to become a multi-million corporation or even a Unicorn. </p>
+                </div>
+            </div>
+        </div>
+        <div class="wwyg-main-div wrapper wrapper" style="display: flex; align-items: center;" data-aos="fade-right">
+            <div class="wwyg-div card" style="border: 0;">
+                <div class="card-body" style="display: flex; flex-direction: column;">
+                    <h1 class="wwyg-title card-title poppins" style="text-align: center">
+                        What will you get?
+                    </h1>
+                    <ul class="wwyg-text rubik card-text" style="list-style-position: outside;">
+                        <li>Access to <strong>all</strong> networking parties</li>
+                        <li>Direct interaction with the founding team</li>
+                        <li>Three month free acess to Enterprise Essentials Pack</li>
+                        <li>Work on Case Studies and practical projects</li>
+                        <li>Life-time  help provided by Venturebox Coaching and Assistant Board</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="wwyg-img-div w-70">
+                <img src="enterprise-growth.png" alt="" class="wwyg-img img-fluid">
+            </div>
+        </div>
+        <div class="sub-button-div" data-aos="fade">
+            <a href="enterprise-checkout-root.html" class="sub-button btn btn-primary rubik">Subscribe Now</a>
+        </div>
+    </div>
+</section>
+
+<!-- end -->
+
+</div>
+     
+    
+<!-- footer start -->
+
+<footer style="position: absolute;">
+    <div class="footer-container">
+        <div class="footer-left">
+            <a href="index.html">
+                <img src="logo.svg" alt="" class="footer-logo img-fluid">
+            </a>
+        </div>
+        <div class="footer-center">
+            <a href="privacy-policy.html" class="privacy-policy-class" target="_blank">© 2023 All Rights Reserved.</a>
+        </div>
+        <div class="footer-left">
+            <div class="social-media-contacts-footer">
+                <a href="#">
+                    <i class="fa fa-brands fa-twitter"></i>
+                </a>
+                <a href="#">
+                    <i class="fa fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="#">
+                    <i class="fa fa-brands fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- footer end -->
+    
+                <!-- Back to Top start -->
+                <a href="#top">
+                    <button onclick="topFunction()" id="myBtn"  class="shadow">
+                        <i class="fa fa-duotone fa-arrow-up"></i>
+                    </button>
+                </a>
+                <!-- back to top end -->
+    
+    
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+<script src="main.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script src="particles.js"></script>
+<script src="app.js"></script>
+<script>
+  AOS.init();
+
+  if (localStorage.getItem("who") != "") {
+            document.getElementById("sign-in-account").innerHTML = "Account";
+            document.getElementById('change-href').href = "my-account.html";
+    };
+</script>
+</body>
+</html>

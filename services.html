@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <title>Venturebox Hub: Services</title>
+</head>
+<body>
+    <div class="cursor" style="z-index: 100;"></div>
+    <div class="cursor2" style="z-index: 100;"></div>
+
+    <!--Navbar Start-->
+    <nav class="navbar navbar-light navbar-expand-lg bg-light justify-content-center" >
+        <div class="container"> 
+            <a href="index.html" class="navbar-brand d-flex w-50 mr-auto">
+                <img src="logo.svg" alt="" class="nav-logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="navbar-collapse collapse w-100" id="navbarSupportedContent">
+                <ul class="navbar-nav w-100 justify-content-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Hub
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="accelerator.html">Accelerator</a></li>
+                          <hr class="dropdown-divider">
+                          <li><a class="dropdown-item active" href="services.html">Services</a></li>
+                          <li><a class="dropdown-item" href="blog.html">Blog</a></li>
+                          <li><a class="dropdown-item" href="subscriptions.html">Subscriptions</a></li>
+                          <li><a href="careers.html" class="dropdown-item">Careers</a></li>
+                        </ul>
+                      </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav ml-auto w-100 justify-content-end">
+                    <a href="sign-in.html" id="change-href">
+                        <button class="btn btn-outline-primary sign-in-button rubik" id="sign-in-account">
+                            Sign In
+                        </button>
+                    </a>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--Navbar End-->
+
+    <div class="overflow-x-wrapper">
+
+    <!-- start of services hero banner -->
+        <section class="services-banner">
+            <div class="services-banner-header">
+                <h1 class="display-1 poppins banner-heading" style="color: white;"  data-aos = "fade-right">
+                    VENTUREBOX HUB
+                    <div class="bottom_box" data-aos = "fade-right" style="z-index: 0;"></div>
+                </h1>
+                <h5 class="display-5 rubik banner-description" style="color: white;"  data-aos = "fade-right">
+                    Services
+                </h5>
+            </div>
+        </section>
+
+
+
+
+    <!-- end of services hero banner -->
+
+    <!-- start of free services -->
+        <section class="free-services" id="particles-js">
+            <div class="free-services-wrapper" id="free">
+                <div class="free-services-header">
+                    <h2 class="display-2 poppins" data-aos = "fade-right">Free Services</h2>
+                </div>  
+                <div class="free-services-card-wrapper">
+                    <div class="service-card free-private-coaching col-lg-4 shadow-lg" data-aos = "fade-up">
+                        <img src="free-private-coaching.png" alt="..." style="max-width: 80%; transform: translateY(-5em);" class="services-img">
+                        <div class="service-card-body" style="transform: translateY(-3em);">
+                            <h3 class="h3 poppins">
+                                Free Private Coaching
+                            </h3>
+                            <p class="free-service-card-paragraph rubik" style="text-align: center;">
+                                45 minutes private coaching for free. Discuss about your struggles, solve problems and generate ideas <span class="private-coaching-free-show">.</span><span class="private-coaching-free-hide">with the help of experts.
+                                </span> 
+                            </p>
+                            <a href="free-private-coaching.html">
+                                <button class="btn btn-lg callout-button btn-blue" type="button">
+                                    Buy for $0
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="service-card notion-masterclass col-lg-4 shadow-lg" data-aos = "fade-up">
+                        <img src="notion-masterclass.png" alt="..." style="width: 80%; transform: translateY(-5em);">
+                        <div class="service-card-body" style="transform: translateY(-3em);">
+                            <h3 class="h3 poppins">
+                                Notion Masterclass
+                            </h3>
+                            <p class="free-service-card-paragraph rubik" style="text-align: center;">
+                                Video course. Master Notion and learn how to adeptly leverage this application to manage your projects.
+                            </p>
+                            <a href="notion-masterclass.html">
+                                <button class="btn btn-lg callout-button btn-blue" type="button">
+                                    Buy for $0
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="service-card free-case-studies col-lg-4 shadow-lg" data-aos = "fade-up">
+                        <img src="free-case-studies.png" alt="..." style="width: 80%; transform: translateY(-5em);">
+                        <div class="service-card-body" style="transform: translateY(-3em);">
+                            <h3 class="h3 poppins">
+                                Case Studies Pack
+                            </h3>
+                            <p class="free-service-card-paragraph rubik" style="text-align: center;">
+                                A PDF curation of 20+ case studies of multi-millionaire corporations, which will aid  you in making sharp decisions. 
+                            </p>
+                            <a href="free-case-studies.html">
+                                <button class="btn btn-lg callout-button btn-blue" type="button">
+                                    Buy for $0
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+
+        <!-- end of free services -->
+
+        <!-- start of permium services -->
+
+        <section class="premium-services">
+            <div class="premium-services-wrapper" >
+                <div class="premium-services-header">
+                    <h2 class="display-2 poppins" data-aos = "fade-left">Premium Services
+                    </h2>
+                    <div class="bottom_box-right" data-aos = "fade-left"></div>
+                </div> 
+                <div class="premium-services-card-wrapper">
+                    <div class="service-card seo-optimization col-lg-4" data-aos = "fade-up">
+                        <img src="seo-optimization.png" alt="..." style="width: 80%; transform: translateY(-5em)">
+                        <div class="service-card-body" style="transform: translateY(-3em);">
+                            <h3 class="h3 poppins">
+                                SEO Service
+                            </h3>
+                            <p class="premium-service-card-paragraph rubik" style="text-align: center;">
+                                All-in-one pack to get your brand discovered online, <span class="reach-more-audience-hide"> reach more audience </span> and expand. 
+                                <br class="seo-opt-filler">
+                                <span class="seo-opt-filler" style="color: #F4864D;">REAL</span>
+                            </p>
+                            <a href="seo-optimization.html">
+                                <button class="btn btn-lg callout-button btn-blue shadow-lg" type="button">
+                                    Buy for $1,229
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="service-card paid-advertisement col-lg-4" data-aos = "fade-up">
+                        <img src="paid-advertisement.png" alt="..." style="width: 80%; transform: translateY(-5em);">
+                        <div class="service-card-body" style="transform: translateY(-3em);">
+                            <h3 class="h3 poppins">
+                                Paid Advertising
+                            </h3>
+                            <p class="premium-service-card-paragraph rubik" style="text-align: center;">
+                                Produce spine-chilling ROI through <br> Paid Advertising. <span class="growth-hide">Growth is just a click away.</span>
+                            </p>
+                            <a href="paid-advertising.html">
+                                <button class="btn btn-lg callout-button btn-blue shadow-lg" type="button">
+                                    Buy for $3,999
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="service-card web-pack col-lg-4" data-aos = "fade-up">
+                        <img src="web-pack.png" alt="..." style="width: 80%; transform: translateY(-5em);">
+                        <div class="service-card-body" style="transform: translateY(-3em);">
+                            <h3 class="h3 poppins">
+                                Web <br class="web-pack-break-show"> Pack
+                            </h3>
+                            <p class="premium-service-card-paragraph rubik" style="text-align: center;">
+                                The online home of your business. <br> From UI design to web hosting included.
+                            </p>
+                            <a href="web-pack.html">
+                                <button class="btn btn-lg callout-button btn-blue shadow-lg" type="button">
+                                    Buy for $2,199
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="premium-services-card-wrapper">
+                    <div class="service-card premium-coaching col-lg-4" data-aos = "fade-up">
+                        <img src="premium-coaching.png" alt="..." style="width: 80%; transform: translateY(-5em)">
+                        <div class="service-card-body" style="transform: translateY(-3em);">
+                            <h3 class="h3 poppins">
+                                Premium Coaching
+                            </h3>
+                            <p class="premium-service-card-paragraph rubik" style="text-align: center;">
+                                Coaching and guidance for your entire team. Comes with access to<span class="net-working-parties-hide">networking </span> parties. 
+                            </p>
+                            <a href="premium-coaching.html">
+                                <button class="btn btn-lg callout-button btn-blue shadow-lg" type="button">
+                                    $2,100/month
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="service-card tech-pack col-lg-4" data-aos = "fade-up">
+                        <img src="tech-pack.png" alt="..." style="width: 80%; transform: translateY(-5em);">
+                        <div class="service-card-body" style="transform: translateY(-3em);">
+                            <h3 class="h3 poppins">
+                                Tech Pack
+                            </h3>
+                            <p class="premium-service-card-paragraph rubik" style="text-align: center;">
+                                Access to Venturebox API,<span class="tech-pack-show"> Venturebox</span> VVS Server, <br>Venturebox AI & <span class="tech-pack-show">Venturebox</span> Engine. 
+                            </p>
+                            <a href="tech-pack.html">
+                                <button class="btn btn-lg callout-button btn-blue shadow-lg" type="button">
+                                    $3,999/month
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="service-card enterprise-essentials col-lg-4" data-aos = "fade-up">
+                        <img src="enterprise-essentials.png" alt="..." style="width: 80%; transform: translateY(-5em);">
+                        <div class="service-card-body" style="transform: translateY(-3em);">
+                            <h3 class="h3 poppins">
+                                Enterprise <br class="web-pack-break-show"> Essentials
+                            </h3>
+                            <p class="premium-service-card-paragraph rubik" style="text-align: center;">
+                                Tech Pack + Premium Coaching + Marketing and Branding: All-in-one pack<span class="success-hide"> to success</span>.
+                            </p>
+                            <a href="enterprise-essentials.html">
+                                <button class="btn btn-lg callout-button btn-blue shadow-lg" type="button">
+                                    $9,999/month
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- end of premium services -->
+
+
+
+
+
+    <!-- footer start -->
+
+    <footer style="background-color: white;">
+        <div class="footer-container">
+            <div class="footer-left">
+                <a href="index.html">
+                    <img src="logo.svg" alt="" class="footer-logo img-fluid">
+                </a>
+            </div>
+            <div class="footer-center">
+                <a href="privacy-policy.html" class="privacy-policy-class" target="_blank">© 2023 All Rights Reserved.</a>
+            </div>
+            <div class="footer-left">
+                <div class="social-media-contacts-footer">
+                    <a href="#">
+                        <i class="fa fa-brands fa-twitter"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa fa-brands fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- footer end -->
+    
+        <!-- Back to Top start -->
+        <a href="#top">
+            <button onclick="topFunction()" id="myBtn"  class="shadow">
+                <i class="fa fa-duotone fa-arrow-up"></i>
+            </button>
+        </a>
+        <!-- back to top end -->
+</div>
+    
+        <!-- start of script  -->
+    
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+        <script src="main.js"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script src="particles.js"></script>
+        <script src="app.js"></script>
+        <script>
+          AOS.init();
+
+          if (localStorage.getItem("who") != "") {
+            document.getElementById("sign-in-account").innerHTML = "Account";
+            document.getElementById('change-href').href = "my-account.html";
+            };
+        </script>
+</body>
+</html>
