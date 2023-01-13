@@ -167,6 +167,15 @@ function acceleratorRegister() {
 
   // file check
   
+  //who check 
+
+if (localStorage.getItem("who") === "alan" || localStorage.getItem("who") === "james" || localStorage.getItem("who") === "nano" || localStorage.getItem("who") === "sat") {
+  document.getElementById("sign-in-account").innerHTML = "Account";
+  document.getElementById('change-href').href = "my-account.html";
+};
+
+// who check end
+  
   if (sessionStorage.getItem("fileEmptyorNot") != "filled") {
     sessionStorage.setItem("fileEmptyorNot", "");
     var totalEmptiness = totalEmptiness + 1;
