@@ -54,12 +54,6 @@ function scrollFunction() {
 
 // Back to top end
 
-
-if (localStorage.getItem("who") != "") {
-  document.getElementById("sign-in-account").innerHTML = "Account";
-  document.getElementById('change-href').href = "my-account.html";
-};
-
 // collapsible start
 
 var coll = document.getElementsByClassName("about-programme-landing-collapsible");
