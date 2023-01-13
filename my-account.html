@@ -204,11 +204,10 @@
             document.getElementById("hide-this").style.display = "none";
             document.getElementById("hide-this-too").style.display = "none";
             document.getElementById("center-this").style.justifyContent = "center";
-        }
-
+        };
         if (localStorage.getItem("who") != "") {
-            document.getElementById("sign-in-active").innerHTML = "Account";
-            document.getElementById('change-href').href = "my-account.html";
+          document.getElementById("sign-in-account").innerHTML = "Account";
+          document.getElementById('change-href').href = "my-account.html";
         };
 
         if(localStorage.getItem("who") === "alan") {
