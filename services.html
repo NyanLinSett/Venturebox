@@ -332,10 +332,9 @@
         <script src="app.js"></script>
         <script>
           AOS.init();
-
-          if (localStorage.getItem("who") != "") {
-            document.getElementById("sign-in-account").innerHTML = "Account";
-            document.getElementById('change-href').href = "my-account.html";
+            if (localStorage.getItem("who") === "alan" || localStorage.getItem("who") === "james" || localStorage.getItem("who") === "nano" || localStorage.getItem("who") === "sat") {
+              document.getElementById("sign-in-account").innerHTML = "Account";
+              document.getElementById('change-href').href = "my-account.html";
             };
         </script>
 </body>
