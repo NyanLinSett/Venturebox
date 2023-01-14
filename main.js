@@ -91,21 +91,13 @@ for (i = 0; i < coll.length; i++) {
 }
 
 function flipSolopreneur() {
-  var element = document.getElementById("down-solopreneur") ;
-  element.classList.remove("fa-caret-down")
-  var element = document.getElementById("down-solopreneur") ;
-  element.classList.toggle("fa-caret-up")
-  var element = document.getElementById("down-solopreneur") ;
-  element.classList.add("fa-caret-down")
+  document.getElementById("down-solopreneur").classList.toggle("fa-caret-down");
+  document.getElementById("down-solopreneur").classList.toggle("fa-caret-up");
 }
 
 function flipEnterprise() {
-  var element = document.getElementById("down") ;
-  element.classList.remove("fa-caret-down")
-  var element = document.getElementById("down") ;
-  element.classList.toggle("fa-caret-up")
-  var element = document.getElementById("down") ;
-  element.classList.add("fa-caret-down")
+  document.getElementById("down").classList.toggle("fa-caret-down");
+  document.getElementById("down").classList.toggle("fa-caret-up");
 }
 
 // collapsible end 
