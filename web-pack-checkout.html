@@ -368,14 +368,15 @@ var removeBTN = document.getElementById("fa-minus-minus");
 removeBTN.addEventListener("click", function() {
   sessionStorage.setItem("removed", "yes");
   sessionStorage.setItem("displayPercentage", 0);
-  if (sessionStorage.getItem("removed") == "yes") {
+    
     document.getElementById("discount-price-percentage").innerHTML = "0";
     document.getElementById("discount-price-price").innerHTML = "0";
     document.getElementById("Subtotal-remove").innerHTML = "$0";
+    document.getElementById("order-summary-item").style.display = "none";
     Total.innerHTML = "0";
     localStorage.setItem("Percentage", 0);
     localStorage.setItem("Enterprise", 0);
-  };
+  
 });
 
 (function alwaysCheckRemove() {
