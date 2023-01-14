@@ -365,8 +365,7 @@ localStorage.setItem("Enterprise", 1299);
 
 var Total = document.getElementById("total");
 
-var removeBTN = document.getElementById("fa-minus-minus");
-removeBTN.addEventListener("click", function() {
+document.getElementById("fa-minus-minus").addEventListener("click", function(){
   sessionStorage.setItem("removed", "yes");
   sessionStorage.setItem("displayPercentage", 0);
 
@@ -390,7 +389,6 @@ removeBTN.addEventListener("click", function() {
     Total.innerHTML = "0";
     localStorage.setItem("Percentage", 0);
     localStorage.setItem("Enterprise", 0);
-  };
 })()
 
 (function checkFunction(){
