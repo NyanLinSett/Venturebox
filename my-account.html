@@ -209,35 +209,37 @@
         if (localStorage.getItem("who") === "alan" || localStorage.getItem("who") === "james" || localStorage.getItem("who") === "nano" || localStorage.getItem("who") === "sat") {
             document.getElementById("sign-in-account").innerHTML = "Account";
             document.getElementById('change-href').href = "my-account.html";
+
+                if(localStorage.getItem("who") === "alan") {
+                    document.getElementById("account-welcome-name").innerHTML = "Alan";
+                    document.getElementById("img-id").src = "alan-id.png";
+                    document.getElementById("print-change").href = "alan-id.png";
+                    document.getElementById("print-change-zwei").href = "alan-id.png";
+                };
+
+                if(localStorage.getItem("who") === "james") {
+                    document.getElementById("account-welcome-name").innerHTML = "James";
+                    document.getElementById("img-id").src = "james-id.png";
+                    document.getElementById("print-change").href = "james-id.png";
+                    document.getElementById("print-change-zwei").href = "james-id.png";
+                };
+
+                if(localStorage.getItem("who") === "sat") {
+                    document.getElementById("account-welcome-name").innerHTML = "Sat";
+                    document.getElementById("img-id").src = "sat-id.png";
+                    document.getElementById("print-change").href = "sat-id.png";
+                    document.getElementById("print-change-zwei").href = "sat-id.png";
+                };
+
+                if(localStorage.getItem("who") === "nano") {
+                    document.getElementById("account-welcome-name").innerHTML = "Nano";
+                    document.getElementById("img-id").src = "nano-id.png";
+                    document.getElementById("print-change").href = "nano-id.png";
+                    document.getElementById("print-change-zwei").href = "nano-id.png";
+                };
          };
 
-        if(localStorage.getItem("who") === "alan") {
-            document.getElementById("account-welcome-name").innerHTML = "Alan";
-            document.getElementById("img-id").src = "alan-id.png";
-            document.getElementById("print-change").href = "alan-id.png";
-            document.getElementById("print-change-zwei").href = "alan-id.png";
-        };
 
-        if(localStorage.getItem("who") === "james") {
-            document.getElementById("account-welcome-name").innerHTML = "James";
-            document.getElementById("img-id").src = "james-id.png";
-            document.getElementById("print-change").href = "james-id.png";
-            document.getElementById("print-change-zwei").href = "james-id.png";
-        };
-
-        if(localStorage.getItem("who") === "sat") {
-            document.getElementById("account-welcome-name").innerHTML = "Sat";
-            document.getElementById("img-id").src = "sat-id.png";
-            document.getElementById("print-change").href = "sat-id.png";
-            document.getElementById("print-change-zwei").href = "sat-id.png";
-        };
-
-        if(localStorage.getItem("who") === "nano") {
-            document.getElementById("account-welcome-name").innerHTML = "Nano";
-            document.getElementById("img-id").src = "nano-id.png";
-            document.getElementById("print-change").href = "nano-id.png";
-            document.getElementById("print-change-zwei").href = "nano-id.png";
-        };
 
         function signOut() {
             localStorage.setItem("who", "");
