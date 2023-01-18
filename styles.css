@@ -6445,7 +6445,7 @@ section.my-account-section {
     }
 }
 
-@media (max-width: 470px) {
+@media (max-width: 450px) {
     .cursor {
         display: none;
     }
