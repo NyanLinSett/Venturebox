@@ -6444,3 +6444,15 @@ section.my-account-section {
         padding: 7.5%;
     }
 }
+
+@media (max-width: 470px) {
+    .cursor {
+        display: none;
+    }
+    .cursor2 {
+        display: none;
+    }
+    * {
+        cursor: default;
+    };
+}
