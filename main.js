@@ -476,7 +476,8 @@ function contactCheck() {
 
   }
   if (sessionStorage.getItem("c-name-status") === "gtg" && sessionStorage.getItem("c-email-validation") === "valid" && sessionStorage.getItem("c-phone-validation") === "valid" && sessionStorage.getItem("c-subject-status") === "gtg" && sessionStorage.getItem("c-message-status") === "gtg"){
-      window.open("message-sent.html", "_blank")
+      location.reload();
+      window.open("message-sent.html", "_blank");
   }
 };
 
