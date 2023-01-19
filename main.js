@@ -4,7 +4,6 @@
 
 var cursor = document.querySelector('.cursor');
 var cursorinner = document.querySelector('.cursor2');
-var a = document.querySelectorAll('a');
 
 document.addEventListener('mousemove', function(e){
   var x = e.clientX;
@@ -28,15 +27,6 @@ document.addEventListener('mouseup', function(){
   cursor.classList.remove('click')
   cursorinner.classList.remove('cursorinnerhover')
 });
-
-a.forEach(item => {
-  item.addEventListener('mouseover', () => {
-    cursor.classList.add('hover');
-  });
-  item.addEventListener('mouseleave', () => {
-    cursor.classList.remove('hover');
-  });
-})
 
 // Custom Cursor End
 
